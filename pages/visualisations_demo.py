@@ -298,6 +298,39 @@ def main():
 
     # ── CHART 1: SLOT PICKER ─────────────────────────────────────────────────
     st.divider()
+
+    # ── SIDEBAR REOPEN BUTTON ─────────────────────────────────────────────────────
+    st.markdown("""
+    <div id="reopen-sidebar-btn" style="display:none; margin-bottom:0.5rem;">
+        <button onclick="
+            var btn = window.parent.document.querySelector(
+                '[data-testid=\"stSidebarCollapsedControl\"] button'
+            ) || window.parent.document.querySelector(
+                'button[aria-label=\"Open sidebar\"]'
+            ) || window.parent.document.querySelector(
+                'button[aria-expanded=\"false\"]'
+            );
+            if (btn) btn.click();
+        " style="background:#1a3a5c;color:#f0c060;border:1px solid #f0a500;
+            border-radius:8px;padding:0.5rem 1.2rem;font-size:0.85rem;
+            font-weight:700;cursor:pointer;width:100%;">
+            &#128194; Sidebar collapsed &mdash; click here to reopen it
+        </button>
+    </div>
+    <script>
+    (function() {
+        function checkSidebar() {
+            var sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
+            var btn = document.getElementById('reopen-sidebar-btn');
+            if (!sidebar || !btn) return;
+            var w = sidebar.getBoundingClientRect().width;
+            btn.style.display = (w < 50) ? 'block' : 'none';
+        }
+        setInterval(checkSidebar, 300);
+    })();
+    </script>
+    """, unsafe_allow_html=True)
+
     st.markdown("## Who Did the Pool Predict?")
     st.caption("Select any matchup to see how the pool split their predictions.")
 
