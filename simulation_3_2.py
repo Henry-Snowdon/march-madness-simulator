@@ -15,7 +15,10 @@ Usage:
     python simulation_3_2.py --force "49:Duke" --force "55:Michigan"
 """
 
-import pyodbc
+try:
+    import pyodbc
+except ImportError:
+    pyodbc = None  # Not available on Streamlit Cloud
 import pandas as pd
 import numpy as np
 import argparse
