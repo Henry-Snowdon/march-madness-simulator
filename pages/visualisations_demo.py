@@ -13,6 +13,9 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title="Visualisations — March Madness Pool",
                    page_icon=None, layout="wide")
 
+# Force sidebar to always stay open
+st.session_state['sidebar_state'] = 'expanded'
+
 st.markdown("""
 <style>
     .stApp { background-color: #0d1b2a; color: #e8eaf0; }

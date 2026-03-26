@@ -22,6 +22,9 @@ st.set_page_config(
 # Page name for Streamlit navigation
 st._config.set_option("browser.gatherUsageStats", False)
 
+# Force sidebar to always stay open
+st.session_state['sidebar_state'] = 'expanded'
+
 st.markdown("""
 <style>
     .stApp { background-color: #0d1b2a; color: #e8eaf0; }    /* Hide sidebar collapse button */
