@@ -1,0 +1,69 @@
+team_id,team_name,seed,region
+1,Duke,1,East
+2,UConn,2,East
+3,Michigan State,3,East
+4,Nebraska,4,Midwest
+5,Vanderbilt,5,Midwest
+6,Louisville,6,East
+7,UCLA,7,East
+8,Clemson,8,Midwest
+9,TCU,9,East
+10,UCF,10,East
+11,VCU,11,Midwest
+12,McNeese,12,Midwest
+13,Troy,13,Midwest
+14,North Dakota State,14,East
+15,Furman,15,East
+16,Siena,16,East
+17,Arizona,1,West
+18,Iowa State,2,South
+19,Virginia,3,South
+20,Alabama,4,South
+21,Texas Tech,5,South
+22,Tennessee,6,South
+23,Kentucky,7,South
+24,Villanova,8,West
+25,Utah State,9,West
+26,Santa Clara,10,South
+27,Miami (Ohio),11,South
+28,Akron,12,South
+29,Hofstra,13,South
+30,Wright State,14,South
+31,Tennessee State,15,South
+32,Long Island University,16,West
+33,Michigan,1,South
+34,Houston,2,Midwest
+35,Illinois,3,Midwest
+36,Arkansas,4,West
+37,St. John's,5,East
+38,North Carolina,6,Midwest
+39,Saint Mary's,7,Midwest
+40,Georgia,8,South
+41,Saint Louis,9,South
+42,Texas A&M,10,Midwest
+43,Texas,11,West
+44,High Point,12,West
+45,Hawai'i,13,West
+46,Penn,14,Midwest
+47,Idaho,15,Midwest
+48,Howard,16,South
+49,Florida,1,Midwest
+50,Purdue,2,West
+51,Gonzaga,3,West
+52,Kansas,4,East
+53,Wisconsin,5,West
+54,BYU,6,West
+55,Miami (Fla.),7,West
+56,Ohio State,8,East
+57,Iowa,9,Midwest
+58,Missouri,10,West
+59,South Florida,11,East
+60,UNI,12,East
+61,Cal Baptist,13,East
+62,Kennesaw State,14,West
+63,Queens,15,West
+64,Prairie View A&M,16,Midwest
+65,NC State,11,FirstFour
+66,UMBC,16,FirstFour
+67,Lehigh,16,FirstFour
+68,SMU,11,FirstFour
