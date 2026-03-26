@@ -13,39 +13,9 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title="Visualisations — March Madness Pool",
                    page_icon=None, layout="wide")
 
-# Force sidebar to always stay open
-# Force sidebar to always stay open using JS component
-import streamlit.components.v1 as components
-components.html("""
-<script>
-(function() {
-    function forceOpen() {
-        // Find the sidebar element
-        var sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
-        if (!sidebar) return;
-        // If collapsed, find and click the expand button
-        if (sidebar.getAttribute('aria-expanded') === 'false') {
-            var btn = window.parent.document.querySelector('[data-testid="stSidebarCollapsedControl"] button, button[aria-label="Open sidebar"], button[aria-expanded="false"]');
-            if (btn) btn.click();
-        }
-    }
-    forceOpen();
-    setInterval(forceOpen, 300);
-})();
-</script>
-""", height=0)
-
 st.markdown("""
 <style>
     .stApp { background-color: #0d1b2a; color: #e8eaf0; }
-    [data-testid="collapsedControl"] { display: none !important; }
-    [data-testid="stSidebarCollapsedControl"] { display: none !important; visibility: hidden !important; width: 0 !important; }
-    section[data-testid="stSidebarCollapsedControl"] { display: none !important; }
-    div[class*="collapsedControl"] { display: none !important; }
-    button[data-testid="baseButton-headerNoPadding"] { display: none !important; }
-    button[aria-label="Close sidebar"] { display: none !important; }
-    button[aria-label="Collapse sidebar"] { display: none !important; }
-    button[kind="header"] { display: none !important; }
     .block-container { padding: 1.2rem 2rem 1rem 2rem !important; max-width: 1400px; }
     [data-testid="stSidebar"] { background-color: #0a1628 !important; border-right: 2px solid #005EB8; }
     [data-testid="stSidebar"] label { color: #c8dff0 !important; font-size: 0.8rem; }
@@ -58,26 +28,6 @@ st.markdown("""
     h1, h2, h3 { color: #ffffff !important; }
 </style>
 """, unsafe_allow_html=True)
-
-# JS: actively remove the sidebar collapse arrow from the DOM
-st.markdown("""
-<script>
-(function removeSidebarArrow() {
-    function kill() {
-        ['collapsedControl', 'stSidebarCollapsedControl'].forEach(function(id) {
-            document.querySelectorAll('[data-testid="' + id + '"]').forEach(function(el) { el.style.display = 'none'; });
-        });
-        document.querySelectorAll('button[aria-label="Collapse sidebar"], button[aria-label="Close sidebar"]')
-            .forEach(function(el) { el.style.display = 'none'; });
-        document.querySelectorAll('button[data-testid="baseButton-headerNoPadding"]')
-            .forEach(function(el) { el.style.display = 'none'; });
-    }
-    kill();
-    new MutationObserver(kill).observe(document.body, { childList: true, subtree: true });
-})();
-</script>
-""", unsafe_allow_html=True)
-
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
 
@@ -298,39 +248,6 @@ def main():
 
     # ── CHART 1: SLOT PICKER ─────────────────────────────────────────────────
     st.divider()
-
-    # ── SIDEBAR REOPEN BUTTON ─────────────────────────────────────────────────────
-    st.markdown("""
-    <div id="reopen-sidebar-btn" style="display:none; margin-bottom:0.5rem;">
-        <button onclick="
-            var btn = window.parent.document.querySelector(
-                '[data-testid=\"stSidebarCollapsedControl\"] button'
-            ) || window.parent.document.querySelector(
-                'button[aria-label=\"Open sidebar\"]'
-            ) || window.parent.document.querySelector(
-                'button[aria-expanded=\"false\"]'
-            );
-            if (btn) btn.click();
-        " style="background:#1a3a5c;color:#f0c060;border:1px solid #f0a500;
-            border-radius:8px;padding:0.5rem 1.2rem;font-size:0.85rem;
-            font-weight:700;cursor:pointer;width:100%;">
-            &#128194; Sidebar collapsed &mdash; click here to reopen it
-        </button>
-    </div>
-    <script>
-    (function() {
-        function checkSidebar() {
-            var sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
-            var btn = document.getElementById('reopen-sidebar-btn');
-            if (!sidebar || !btn) return;
-            var w = sidebar.getBoundingClientRect().width;
-            btn.style.display = (w < 50) ? 'block' : 'none';
-        }
-        setInterval(checkSidebar, 300);
-    })();
-    </script>
-    """, unsafe_allow_html=True)
-
     st.markdown("## Who Did the Pool Predict?")
     st.caption("Select any matchup to see how the pool split their predictions.")
 
