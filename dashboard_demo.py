@@ -454,46 +454,55 @@ def main():
 
     st.divider()
 
-    # ── SIDEBAR ──────────────────────────────────────────────────────────────
-    with st.sidebar:
-        st.markdown("### Simulator")
+    # ── CONTROLS EXPANDER ────────────────────────────────────────────────────
+    with st.expander("⚙️ Simulator Settings", expanded=True):
+        col_a, col_b, col_c = st.columns([1, 1, 1])
 
-        st.markdown('<div class="section-label">Perspective</div>', unsafe_allow_html=True)
-        view_mode = st.radio("", ["Bracket", "Person"], horizontal=True,
-                             label_visibility="collapsed")
+        with col_a:
+            st.markdown('<div class="section-label">Perspective</div>', unsafe_allow_html=True)
+            view_mode = st.radio("", ["Bracket", "Person"], horizontal=True,
+                                 label_visibility="collapsed")
+            if view_mode == "Bracket":
+                selected_bracket = st.selectbox("Select bracket",
+                    ["All Brackets"] + sorted(scores['bracket_name'].tolist()))
+                selected_person  = None
+            else:
+                selected_person  = st.selectbox("Select person", ["All People"] + creators)
+                selected_bracket = None
 
-        if view_mode == "Bracket":
-            selected_bracket = st.selectbox("Select bracket",
-                ["All Brackets"] + sorted(scores['bracket_name'].tolist()))
-            selected_person  = None
-        else:
-            selected_person  = st.selectbox("Select person", ["All People"] + creators)
-            selected_bracket = None
+            st.markdown('<div class="section-label">Simulations</div>', unsafe_allow_html=True)
+            n_sims = st.select_slider("Per scenario",
+                                      options=[500, 1000, 2000, 5000, 10000], value=1000)
+            st.caption(f"Total: {256 * n_sims:,} simulations")
 
-        st.markdown('<div class="section-label">Simulations</div>', unsafe_allow_html=True)
-        n_sims = st.select_slider("Per scenario",
-                                  options=[500, 1000, 2000, 5000, 10000], value=1000)
-        st.caption(f"Total: {256 * n_sims:,} simulations")
+        with col_b:
+            st.markdown('<div class="section-label">Force Sweet 16 Outcomes</div>',
+                        unsafe_allow_html=True)
+            st.caption("Lock results before simulating (optional)")
+            forced_outcomes = {}
+            forced_names    = {}
+            for region, sid, t1, t2 in MATCHUPS[:4]:
+                pick = st.selectbox(f"{t1} vs {t2}  |  {region}",
+                                    ["No pick", t1, t2], key=f"slot_{sid}")
+                if pick != "No pick":
+                    tid = team_id_map.get(pick)
+                    if tid:
+                        forced_outcomes[sid] = tid
+                        forced_names[tid]    = pick
 
-        st.divider()
+        with col_c:
+            st.markdown('<div class="section-label">&nbsp;</div>', unsafe_allow_html=True)
+            st.caption("&nbsp;")
+            for region, sid, t1, t2 in MATCHUPS[4:]:
+                pick = st.selectbox(f"{t1} vs {t2}  |  {region}",
+                                    ["No pick", t1, t2], key=f"slot_{sid}")
+                if pick != "No pick":
+                    tid = team_id_map.get(pick)
+                    if tid:
+                        forced_outcomes[sid] = tid
+                        forced_names[tid]    = pick
 
-        st.markdown('<div class="section-label">Force Sweet 16 Outcomes</div>',
-                    unsafe_allow_html=True)
-        st.caption("Lock results before simulating to test permutations (optional)")
-
-        forced_outcomes = {}
-        forced_names    = {}
-        for region, sid, t1, t2 in MATCHUPS:
-            pick = st.selectbox(f"{t1} vs {t2}  |  {region}",
-                                ["No pick", t1, t2], key=f"slot_{sid}")
-            if pick != "No pick":
-                tid = team_id_map.get(pick)
-                if tid:
-                    forced_outcomes[sid] = tid
-                    forced_names[tid]    = pick
-
-        st.divider()
-        run_button = st.button("RUN SIMULATION", type="primary", use_container_width=True)
+        run_button = st.button("▶ RUN SIMULATION", type="primary", use_container_width=True)
 
     # ── SIMULATION RESULTS ───────────────────────────────────────────────────
     if run_button:
@@ -788,7 +797,7 @@ def main():
                            use_container_width=True)
 
     else:
-        st.markdown('<div style="background-color:#112240; border:1px solid #005EB8; border-radius:6px; padding:0.8rem 1rem; font-size:0.9rem; color:#c8dff0;">&#8592; Select your settings in the sidebar and click <b style="color:#ffffff;">RUN SIMULATION</b> to get started.</div>', unsafe_allow_html=True)
+        st.markdown('<div style="background-color:#112240; border:1px solid #005EB8; border-radius:6px; padding:0.8rem 1rem; font-size:0.9rem; color:#c8dff0;">&#8593; Select your settings above and click <b style="color:#ffffff;">RUN SIMULATION</b> to get started.</div>', unsafe_allow_html=True)
         st.markdown('<div style="margin-top:0.5rem;font-size:0.82rem;color:#8ab0cc;">&#8598; Once you get tired of the numbers (impossible) — check out some fun visualisations of the data in the top left corner!</div>', unsafe_allow_html=True)
 
     # ── CURRENT STANDINGS (bottom) ────────────────────────────────────────────
