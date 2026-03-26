@@ -26,16 +26,13 @@ st.markdown("""
 <style>
     .stApp { background-color: #0d1b2a; color: #e8eaf0; }    /* Hide sidebar collapse button */
     [data-testid="collapsedControl"] { display: none !important; }
-    button[kind="header"] { display: none !important; }
-    section[data-testid="stSidebarCollapsedControl"] { display: none !important; }
     [data-testid="stSidebarCollapsedControl"] { display: none !important; visibility: hidden !important; width: 0 !important; }
+    section[data-testid="stSidebarCollapsedControl"] { display: none !important; }
     div[class*="collapsedControl"] { display: none !important; }
-    svg[data-testid="stSidebarCollapsedControl"] { display: none !important; }
     button[data-testid="baseButton-headerNoPadding"] { display: none !important; }
-    .st-emotion-cache-1rtdyuf { display: none !important; }
-    .st-emotion-cache-h5rgaw { display: none !important; }
     button[aria-label="Close sidebar"] { display: none !important; }
     button[aria-label="Collapse sidebar"] { display: none !important; }
+    button[kind="header"] { display: none !important; }
 
     .block-container { padding: 1.2rem 2rem 1rem 2rem !important; max-width: 1400px; }
 
@@ -140,6 +137,25 @@ st.markdown("""
     footer { visibility: hidden; }
     header { visibility: hidden; }
 </style>
+""", unsafe_allow_html=True)
+
+# JS: actively remove the sidebar collapse arrow from the DOM
+st.markdown("""
+<script>
+(function removeSidebarArrow() {
+    function kill() {
+        ['collapsedControl', 'stSidebarCollapsedControl'].forEach(function(id) {
+            document.querySelectorAll('[data-testid="' + id + '"]').forEach(function(el) { el.style.display = 'none'; });
+        });
+        document.querySelectorAll('button[aria-label="Collapse sidebar"], button[aria-label="Close sidebar"]')
+            .forEach(function(el) { el.style.display = 'none'; });
+        document.querySelectorAll('button[data-testid="baseButton-headerNoPadding"]')
+            .forEach(function(el) { el.style.display = 'none'; });
+    }
+    kill();
+    new MutationObserver(kill).observe(document.body, { childList: true, subtree: true });
+})();
+</script>
 """, unsafe_allow_html=True)
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
