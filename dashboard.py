@@ -22,7 +22,10 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    .stApp { background-color: #0d1b2a; color: #e8eaf0; }
+    .stApp { background-color: #0d1b2a; color: #e8eaf0; }    /* Hide sidebar collapse button */
+    [data-testid="collapsedControl"] { display: none !important; }
+    button[kind="header"] { display: none !important; }
+
     .block-container { padding: 1.2rem 2rem 1rem 2rem !important; max-width: 1400px; }
 
     .hero-title {
