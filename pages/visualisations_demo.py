@@ -19,6 +19,10 @@ st.markdown("""
     [data-testid="collapsedControl"] { display: none !important; }
     button[kind="header"] { display: none !important; }
     section[data-testid="stSidebarCollapsedControl"] { display: none !important; }
+    [data-testid="stSidebarCollapsedControl"] { display: none !important; visibility: hidden !important; width: 0 !important; }
+    div[class*="collapsedControl"] { display: none !important; }
+    svg[data-testid="stSidebarCollapsedControl"] { display: none !important; }
+    button[data-testid="baseButton-headerNoPadding"] { display: none !important; }
     .st-emotion-cache-1rtdyuf { display: none !important; }
     .st-emotion-cache-h5rgaw { display: none !important; }
     button[aria-label="Close sidebar"] { display: none !important; }
