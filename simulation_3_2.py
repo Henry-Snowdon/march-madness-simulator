@@ -196,10 +196,13 @@ def get_connection():
 
 def load_data(conn):
     scores = pd.read_sql(f"""
-        SELECT bracket_id, bracket_name, bracket_creator,
-               COALESCE(SUM(points_won), 0) AS current_score
-        FROM {SCHEMA}.vw_Prediction_Results
-        GROUP BY bracket_id, bracket_name, bracket_creator
+        SELECT bc.bracket_id, bc.bracket_name, bc.bracket_creator,
+               COALESCE(SUM(CASE WHEN ts.actual_winner_id = bp.predicted_winner_id
+                            THEN ts.potential_points ELSE 0 END), 0) AS current_score
+        FROM {SCHEMA}.Bracket_Contestants bc
+        JOIN {SCHEMA}.Bracket_Predictions bp ON bc.bracket_id = bp.bracket_id
+        JOIN {SCHEMA}.Tournament_Slots    ts ON bp.slot_id    = ts.slot_id
+        GROUP BY bc.bracket_id, bc.bracket_name, bc.bracket_creator
     """, conn)
     # Rename bracket
     scores['bracket_name'] = scores['bracket_name'].replace(
