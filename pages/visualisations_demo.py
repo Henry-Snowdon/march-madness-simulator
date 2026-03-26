@@ -14,7 +14,26 @@ st.set_page_config(page_title="Visualisations — March Madness Pool",
                    page_icon=None, layout="wide")
 
 # Force sidebar to always stay open
-st.session_state['sidebar_state'] = 'expanded'
+# Force sidebar to always stay open using JS component
+import streamlit.components.v1 as components
+components.html("""
+<script>
+(function() {
+    function forceOpen() {
+        // Find the sidebar element
+        var sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
+        if (!sidebar) return;
+        // If collapsed, find and click the expand button
+        if (sidebar.getAttribute('aria-expanded') === 'false') {
+            var btn = window.parent.document.querySelector('[data-testid="stSidebarCollapsedControl"] button, button[aria-label="Open sidebar"], button[aria-expanded="false"]');
+            if (btn) btn.click();
+        }
+    }
+    forceOpen();
+    setInterval(forceOpen, 300);
+})();
+</script>
+""", height=0)
 
 st.markdown("""
 <style>
