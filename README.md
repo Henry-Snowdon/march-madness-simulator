@@ -2,7 +2,7 @@
 
 > *A full-stack data project combining SQL Server, Monte Carlo simulation, and an interactive Streamlit dashboard to answer the most important question in any March Madness pool.*
 
-> **Live demo:** [who-should-i-root-for.streamlit.app](https://who-should-i-root-for.streamlit.app) *(hosted on Streamlit Community Cloud — no setup required)*
+> **Live demo:** [march-madness-simulator-elro.streamlit.app](https://march-madness-simulator-elro.streamlit.app) *(hosted on Streamlit Community Cloud — no setup required)*
 
 ---
 
@@ -46,7 +46,7 @@ The project ships as a two-page interactive Streamlit web app in two versions:
 | Version | Description | How to access |
 |---|---|---|
 | **Full version** (`dashboard.py`) | Connects to a local SQL Server database. Full read/write capability — update results, run the simulation engine, export Excel | Run locally with `streamlit run dashboard.py` |
-| **Demo version** (`dashboard_demo.py`) | Reads from bundled CSV files. Identical UI and simulation engine — no database required | [Live on Streamlit Cloud](https://who-should-i-root-for.streamlit.app) or run locally with `streamlit run dashboard_demo.py` |
+| **Demo version** (`dashboard_demo.py`) | Reads from bundled CSV files. Identical UI and simulation engine — no database required | [Live on Streamlit Cloud](https://march-madness-simulator-elro.streamlit.app) or run locally with `streamlit run dashboard_demo.py` |
 
 The demo version is functionally identical to the full version for everything a visitor needs — the simulation engine, all visualisations, Excel export, and forced outcome analysis all work exactly the same. The only difference is the data source.
 
@@ -76,7 +76,7 @@ Gold row highlighting tracks your selected bracket or person across all tables, 
 
 ### Page 2 — Visualisations
 
-A separate visualisations page provides a more intuitive, chart-based view of the pool data — useful for sharing with friends who want the narrative visually.
+A separate visualisations page provides a more intuitive, chart-based view of the pool data — useful for sharing with friends who want the narrative without the numbers.
 
 | Chart | Description |
 |---|---|
@@ -87,7 +87,7 @@ A separate visualisations page provides a more intuitive, chart-based view of th
 | Game Impact Heatmap | Once the simulator has been run on Page 1, a heatmap shows which Sweet 16 games matter most to which brackets — colour coded from cool blue (low impact) to hot red (high impact) |
 | Champion Pick Breakdown | Pie chart of championship picks across all 25 brackets, in team colours |
 
-> **No setup required** — visit the [live demo](https://who-should-i-root-for.streamlit.app) to interact with the full simulator in your browser.
+> **No setup required** — visit the [live demo](https://march-madness-simulator-elro.streamlit.app) to interact with the full simulator in your browser.
 
 ---
 
@@ -424,7 +424,7 @@ Navigate to `http://localhost:8501` in your browser.
 
 ### Live demo (no setup)
 
-Visit **[who-should-i-root-for.streamlit.app](https://who-should-i-root-for.streamlit.app)** — the full simulator runs in your browser, powered by the bundled CSV data. Select any bracket, run the simulation, force outcomes, and download the Excel file, all without installing anything.
+Visit **[march-madness-simulator-elro.streamlit.app](https://march-madness-simulator-elro.streamlit.app)** — the full simulator runs in your browser, powered by the bundled CSV data. Select any bracket, run the simulation, force outcomes, and download the Excel file, all without installing anything.
 
 ### From the dashboard (local, full version)
 
@@ -476,4 +476,4 @@ Predictive Modelling · Data Analysis · Practical Insights · Long suffering Je
 
 ---
 
-*Built during the 2026 NCAA Tournament. [Try the live demo →](https://who-should-i-root-for.streamlit.app)*
+*Built during the 2026 NCAA Tournament. [Try the live demo →](https://march-madness-simulator-elro.streamlit.app)*
