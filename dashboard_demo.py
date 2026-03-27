@@ -438,9 +438,9 @@ def main():
     # ── NAV BAR ──────────────────────────────────────────────────────────────
     col_nav1, col_nav2, col_spacer = st.columns([1, 1, 6])
     with col_nav1:
-        st.page_link("dashboard_demo.py", label="📊 Simulator", use_container_width=True)
+        st.page_link("dashboard_demo.py", label="Simulator", use_container_width=True)
     with col_nav2:
-        st.page_link("pages/visualisations_demo.py", label="📈 Visualisations", use_container_width=True)
+        st.page_link("pages/visualisations_demo.py", label="Visualisations", use_container_width=True)
     st.divider()
 
     # ── HEADER ───────────────────────────────────────────────────────────────
@@ -808,7 +808,7 @@ def main():
 
     else:
         st.markdown('<div style="background-color:#112240; border:1px solid #005EB8; border-radius:6px; padding:0.8rem 1rem; font-size:0.9rem; color:#c8dff0;">&#8593; Select your settings above and click <b style="color:#ffffff;">RUN SIMULATION</b> to get started.</div>', unsafe_allow_html=True)
-        st.markdown('<div style="margin-top:0.5rem;font-size:0.82rem;color:#8ab0cc;">&#8598; Once you get tired of the numbers (impossible) — check out some fun visualisations of the data in the top left corner!</div>', unsafe_allow_html=True)
+        st.markdown('<div style="margin-top:0.5rem;font-size:0.82rem;color:#8ab0cc;">&#8593; Once you get tired of the numbers (impossible) — check out some fun visualisations of the data at the top of the screen!</div>', unsafe_allow_html=True)
 
     # ── CURRENT STANDINGS (bottom) ────────────────────────────────────────────
     st.divider()

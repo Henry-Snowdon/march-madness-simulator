@@ -211,9 +211,9 @@ def main():
     # ── NAV BAR ──────────────────────────────────────────────────────────────
     col_nav1, col_nav2, col_spacer = st.columns([1, 1, 6])
     with col_nav1:
-        st.page_link("dashboard_demo.py", label="📊 Simulator", use_container_width=True)
+        st.page_link("dashboard_demo.py", label="Simulator", use_container_width=True)
     with col_nav2:
-        st.page_link("pages/visualisations_demo.py", label="📈 Visualisations", use_container_width=True)
+        st.page_link("pages/visualisations_demo.py", label="Visualisations", use_container_width=True)
     st.divider()
 
     # ── HEADER WITH ALL 64 TEAM LOGOS ───────────────────────────────────────
