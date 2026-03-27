@@ -127,6 +127,8 @@ st.markdown("""
     #MainMenu { visibility: hidden; }
     footer { visibility: hidden; }
     header { visibility: hidden; }
+    [data-testid="stSidebar"] { display: none !important; }
+    [data-testid="stSidebarCollapsedControl"] { display: none !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -432,6 +434,14 @@ def main():
                  'team_1': int(r['team_1_id']),
                  'team_2': int(r['team_2_id'])}
                 for _, r in slots.iterrows()]
+
+    # ── NAV BAR ──────────────────────────────────────────────────────────────
+    col_nav1, col_nav2, col_spacer = st.columns([1, 1, 6])
+    with col_nav1:
+        st.page_link("dashboard_demo.py", label="📊 Simulator", use_container_width=True)
+    with col_nav2:
+        st.page_link("pages/visualisations_demo.py", label="📈 Visualisations", use_container_width=True)
+    st.divider()
 
     # ── HEADER ───────────────────────────────────────────────────────────────
     col_title, col_logos = st.columns([3, 2])

@@ -25,6 +25,8 @@ st.markdown("""
     hr { border-color: #1e3a5f; margin: 0.7rem 0; }
     .stCaption { color: #8ab0cc !important; font-size: 0.76rem; }
     #MainMenu { visibility: hidden; } footer { visibility: hidden; } header { visibility: hidden; }
+    [data-testid="stSidebar"] { display: none !important; }
+    [data-testid="stSidebarCollapsedControl"] { display: none !important; }
     h1, h2, h3 { color: #ffffff !important; }
 </style>
 """, unsafe_allow_html=True)
@@ -206,6 +208,14 @@ def load_champs():
 
 
 def main():
+    # ── NAV BAR ──────────────────────────────────────────────────────────────
+    col_nav1, col_nav2, col_spacer = st.columns([1, 1, 6])
+    with col_nav1:
+        st.page_link("dashboard_demo.py", label="📊 Simulator", use_container_width=True)
+    with col_nav2:
+        st.page_link("pages/visualisations_demo.py", label="📈 Visualisations", use_container_width=True)
+    st.divider()
+
     # ── HEADER WITH ALL 64 TEAM LOGOS ───────────────────────────────────────
     col_title, col_logos = st.columns([2, 3])
     with col_title:
