@@ -214,14 +214,10 @@ def team_pill(team):
             f'white-space:nowrap;">{team}</span>')
 
 MATCHUPS = [
-    ("East",    49, "Duke",          "St. John's"),
-    ("East",    50, "Michigan State","UConn"),
-    ("West",    51, "Arizona",       "Arkansas"),
-    ("West",    52, "Texas",         "Purdue"),
-    ("Midwest", 53, "Iowa",          "Nebraska"),
-    ("Midwest", 54, "Illinois",      "Houston"),
-    ("South",   55, "Michigan",      "Alabama"),
-    ("South",   56, "Tennessee",     "Iowa State"),
+    ("East",    57, "Duke",    "UConn"),
+    ("West",    58, "Arizona", "Purdue"),
+    ("Midwest", 59, "Iowa",    "Illinois"),
+    ("South",   60, "Michigan","Tennessee"),
 ]
 
 # ─── HTML TABLE HELPER ───────────────────────────────────────────────────────
@@ -486,12 +482,12 @@ def main():
             st.caption(f"Total: {16 * n_sims:,} simulations")
 
         with col_b:
-            st.markdown('<div class="section-label">Force Sweet 16 Outcomes</div>',
+            st.markdown('<div class="section-label">Force Elite 8 Outcomes</div>',
                         unsafe_allow_html=True)
             st.caption("Lock results before simulating (optional)")
             forced_outcomes = {}
             forced_names    = {}
-            for region, sid, t1, t2 in MATCHUPS[:4]:
+            for region, sid, t1, t2 in MATCHUPS[:2]:
                 pick = st.selectbox(f"{t1} vs {t2}  |  {region}",
                                     ["No pick", t1, t2], key=f"slot_{sid}")
                 if pick != "No pick":
@@ -503,7 +499,7 @@ def main():
         with col_c:
             st.markdown('<div class="section-label">&nbsp;</div>', unsafe_allow_html=True)
             st.caption("&nbsp;")
-            for region, sid, t1, t2 in MATCHUPS[4:]:
+            for region, sid, t1, t2 in MATCHUPS[2:]:
                 pick = st.selectbox(f"{t1} vs {t2}  |  {region}",
                                     ["No pick", t1, t2], key=f"slot_{sid}")
                 if pick != "No pick":
