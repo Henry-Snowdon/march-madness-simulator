@@ -159,15 +159,16 @@ def compute_person_win_probs(total_scores, bracket_ids, person_map):
 
 def compute_person_win_probs_from_bracket_results(all_results, bracket_ids, person_map):
     """
-    Given all_results (256 x n_brackets) of per-bracket win probs per scenario,
+    Given all_results (n_scenarios x n_brackets) of per-bracket win probs per scenario,
     compute per-person win probs using simulation approach.
     We approximate by running per-scenario person win probs and weighting.
     Note: This is approximate since we don't have raw scores per scenario.
-    Returns all_person_results (256 x n_persons) array.
+    Returns all_person_results (n_scenarios x n_persons) array.
     """
     creators = list(person_map.keys())
     n_persons = len(creators)
     bid_to_idx = {bid: i for i, bid in enumerate(bracket_ids)}
+    n_scenarios = all_results.shape[0]
 
     # For each scenario, person win prob ≈ 1 - P(all their brackets lose)
     # Better approximation: sum of bracket win probs (overcounts ties but close enough)
@@ -176,13 +177,13 @@ def compute_person_win_probs_from_bracket_results(all_results, bracket_ids, pers
     # = 1 - prod(1 - P(bracket_i wins)) [assuming independence across brackets in same pool]
     # This is an approximation since brackets aren't independent but it's directionally correct
 
-    all_person_results = np.zeros((256, n_persons))
+    all_person_results = np.zeros((n_scenarios, n_persons))
     for pi, creator in enumerate(creators):
         bids = person_map[creator]
         idxs = [bid_to_idx[bid] for bid in bids if bid in bid_to_idx]
         if not idxs:
             continue
-        bracket_probs = all_results[:, idxs]  # (256, n_brackets_for_person)
+        bracket_probs = all_results[:, idxs]  # (n_scenarios, n_brackets_for_person)
         # P(person wins) ≈ 1 - prod(1 - P(bracket wins))
         all_person_results[:, pi] = 1 - np.prod(1 - bracket_probs, axis=1)
 
@@ -362,7 +363,7 @@ def build_excel(all_results, all_permutations, scenario_probs, s16_info,
     now = datetime.datetime.now().strftime("%B %d, %Y %H:%M")
     meta = [
         ("Generated:", now),
-        ("Methodology:", "Pure KenPom | Exhaustive 256 S16 enumeration | KenPom-weighted baseline"),
+        ("Methodology:", "Pure KenPom | Exhaustive 16 E8 enumeration | KenPom-weighted baseline"),
         ("Forced outcomes:", ", ".join([f"{forced_names.get(tid,'?')} (Slot {sid})"
                                         for sid, tid in forced_outcomes.items()]) if forced_outcomes else "None"),
     ]
@@ -390,8 +391,8 @@ def build_excel(all_results, all_permutations, scenario_probs, s16_info,
         ("Game Impact Per Bracket",        "Ranked game importance per bracket"),
         ("Game Impact Per Person",         "Ranked game importance per person"),
         ("Overall Game Impact",            "Which games matter most to the pool"),
-        ("All 256 Scenarios",              "Every Sweet 16 outcome (by bracket)"),
-        ("All 256 Scenarios (By Person)",  "Every Sweet 16 outcome (by person)"),
+        ("All 16 Scenarios",              "Every Sweet 16 outcome (by bracket)"),
+        ("All 16 Scenarios (By Person)",  "Every Sweet 16 outcome (by person)"),
     ]
     ws_idx.cell(row=13, column=2, value="Navigate to:").font = Font(name="Arial", size=11, bold=True)
     ws_idx.row_dimensions[13].height = 20
@@ -751,7 +752,7 @@ def build_excel(all_results, all_permutations, scenario_probs, s16_info,
     ws6.freeze_panes = "A2"
 
     # ── SHEET 7: All 256 Scenarios (By Bracket) ───────────────────────────────
-    ws7 = wb.create_sheet("All 256 Scenarios")
+    ws7 = wb.create_sheet("All 16 Scenarios")
     ws7.row_dimensions[1].height = 35
     hdr(ws7, 1, 1, "Scenario", 9); hdr(ws7, 1, 2, "KenPom Prob %", 13)
     for gi, g in enumerate(s16_info):
@@ -799,7 +800,7 @@ def build_excel(all_results, all_permutations, scenario_probs, s16_info,
     )
 
     # ── SHEET 8: All 256 Scenarios (By Person) ────────────────────────────────
-    ws8 = wb.create_sheet("All 256 Scenarios (By Person)")
+    ws8 = wb.create_sheet("All 16 Scenarios (By Person)")
     ws8.row_dimensions[1].height = 35
     hdr(ws8, 1, 1, "Scenario", 9); hdr(ws8, 1, 2, "KenPom Prob %", 13)
     for gi, g in enumerate(s16_info):
@@ -857,7 +858,7 @@ def main(n_sims, forced_outcomes=None, forced_names=None):
     print(f"MARCH MADNESS POOL SIMULATOR v3.2")
     print(f"{'='*65}")
     print(f"Pure KenPom | Exhaustive 256 S16 | KenPom-weighted baseline | Person analysis")
-    print(f"Sims/scenario: {n_sims:,} | Total: {256*n_sims:,}")
+    print(f"Sims/scenario: {n_sims:,} | Total: {16*n_sims:,}")
     if forced_outcomes:
         for sid, tid in forced_outcomes.items():
             print(f"  Forced: Slot {sid} → {forced_names.get(tid, str(tid))}")
@@ -876,13 +877,13 @@ def main(n_sims, forced_outcomes=None, forced_names=None):
     s16_info         = [{'slot_id': int(r['slot_id']), 'team_1': int(r['team_1_id']), 'team_2': int(r['team_2_id'])}
                         for _, r in slots.iterrows()]
     all_permutations = list(product([0, 1], repeat=8))
-    all_results      = np.zeros((256, len(bracket_ids)))
-    scenario_probs   = np.zeros(256)
+    all_results      = np.zeros((16, len(bracket_ids)))
+    scenario_probs   = np.zeros(16)
 
-    print(f"Running 256 scenarios...")
+    print(f"Running 16 scenarios...")
     for perm_idx, perm in enumerate(all_permutations):
         if (perm_idx+1) % 64 == 0:
-            print(f"  Scenario {perm_idx+1}/256 complete...")
+            print(f"  Scenario {perm_idx+1}/16 complete...")
         s16_forced = {}
         for gi, game in enumerate(s16_info):
             sid = game['slot_id']
