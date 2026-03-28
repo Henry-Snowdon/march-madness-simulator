@@ -190,7 +190,7 @@ GO
 -- WEST:    slots 9-16  (R64), 37-40 (R32), 51-52 (S16), 58 (E8)
 -- MIDWEST: slots 17-24 (R64), 41-44 (R32), 53-54 (S16), 59 (E8)
 -- SOUTH:   slots 25-32 (R64), 45-48 (R32), 55-56 (S16), 60 (E8)
--- FINAL FOUR: 61 (East vs West winner), 62 (Midwest vs South winner)
+-- FINAL FOUR: 61 (East vs South winner), 62 (West vs Midwest winner)
 -- CHAMPIONSHIP: 63
 -- ============================================================
 
@@ -223,24 +223,24 @@ INSERT INTO mm.Tournament_Slots (slot_id, round, region, parent_slot_id, team_1_
 (14, 1, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
 (15, 1, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
 (16, 1, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
--- ROUND 1 — MIDWEST
-(17, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(18, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(19, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
-(20, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(21, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(22, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(23, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(24, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
 -- ROUND 1 — SOUTH
-(25, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
-(26, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
-(27, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
-(28, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
-(29, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(30, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
-(31, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
-(32, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(17, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(18, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(19, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
+(20, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(21, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(22, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(23, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(24, 1, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+-- ROUND 1 — MIDWEST
+(25, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
+(26, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
+(27, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
+(28, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
+(29, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(30, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
+(31, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-20', 1),
+(32, 1, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-19', 1),
 -- ROUND 2 — EAST
 (33, 2, 'East',    NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
 (34, 2, 'East',    NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
@@ -251,30 +251,30 @@ INSERT INTO mm.Tournament_Slots (slot_id, round, region, parent_slot_id, team_1_
 (38, 2, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
 (39, 2, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
 (40, 2, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
--- ROUND 2 — MIDWEST
-(41, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
-(42, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
-(43, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
-(44, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
 -- ROUND 2 — SOUTH
-(45, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
-(46, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
-(47, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
-(48, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(41, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(42, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(43, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(44, 2, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+-- ROUND 2 — MIDWEST
+(45, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(46, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(47, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
+(48, 2, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-22', 2),
 -- SWEET 16
 (49, 3, 'East',    NULL, NULL, NULL, NULL, NULL, '2026-03-27', 4),
 (50, 3, 'East',    NULL, NULL, NULL, NULL, NULL, '2026-03-28', 4),
 (51, 3, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-27', 4),
 (52, 3, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-28', 4),
-(53, 3, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-27', 4),
-(54, 3, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-28', 4),
-(55, 3, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-27', 4),
-(56, 3, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-28', 4),
+(53, 3, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-27', 4),
+(54, 3, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-28', 4),
+(55, 3, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-27', 4),
+(56, 3, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-28', 4),
 -- ELITE 8
 (57, 4, 'East',    NULL, NULL, NULL, NULL, NULL, '2026-03-29', 8),
 (58, 4, 'West',    NULL, NULL, NULL, NULL, NULL, '2026-03-29', 8),
-(59, 4, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-30', 8),
-(60, 4, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-30', 8),
+(59, 4, 'South',   NULL, NULL, NULL, NULL, NULL, '2026-03-30', 8),
+(60, 4, 'Midwest', NULL, NULL, NULL, NULL, NULL, '2026-03-30', 8),
 -- FINAL FOUR
 (61, 5, NULL,      NULL, NULL, NULL, NULL, NULL, '2026-04-04', 16),
 (62, 5, NULL,      NULL, NULL, NULL, NULL, NULL, '2026-04-04', 16),
@@ -324,8 +324,8 @@ UPDATE mm.Tournament_Slots SET parent_slot_id = 58 WHERE slot_id IN (51, 52);
 UPDATE mm.Tournament_Slots SET parent_slot_id = 59 WHERE slot_id IN (53, 54);
 UPDATE mm.Tournament_Slots SET parent_slot_id = 60 WHERE slot_id IN (55, 56);
 -- Elite 8 → Final Four parents
-UPDATE mm.Tournament_Slots SET parent_slot_id = 61 WHERE slot_id IN (57, 58);
-UPDATE mm.Tournament_Slots SET parent_slot_id = 62 WHERE slot_id IN (59, 60);
+UPDATE mm.Tournament_Slots SET parent_slot_id = 61 WHERE slot_id IN (57, 59); -- East + South
+UPDATE mm.Tournament_Slots SET parent_slot_id = 62 WHERE slot_id IN (58, 60); -- West + Midwest
 -- Final Four → Championship
 UPDATE mm.Tournament_Slots SET parent_slot_id = 63 WHERE slot_id IN (61, 62);
 GO
