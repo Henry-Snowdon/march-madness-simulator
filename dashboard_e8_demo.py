@@ -146,31 +146,19 @@ LATE_SLOTS       = [61, 62, 63]
 ALL_FUTURE_SLOTS = S16_SLOTS + LATE_SLOTS
 
 TEAM_LOGOS = {
-    "Duke":           "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
-    "St. John's":     "https://a.espncdn.com/i/teamlogos/ncaa/500/2599.png",
-    "Michigan State": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
-    "UConn":          "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
-    "Arizona":        "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
-    "Arkansas":       "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
-    "Texas":          "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
-    "Purdue":         "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
-    "Iowa":           "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
-    "Nebraska":       "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
-    "Illinois":       "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
-    "Houston":        "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-    "Michigan":       "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
-    "Alabama":        "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
-    "Tennessee":      "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
-    "Iowa State":     "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
+    "Duke":      "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
+    "UConn":     "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png",
+    "Arizona":   "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+    "Purdue":    "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
+    "Iowa":      "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+    "Illinois":  "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
+    "Michigan":  "https://a.espncdn.com/i/teamlogos/ncaa/500/130.png",
+    "Tennessee": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
 }
 
 TEAM_ABBR = {
-    "Duke": "DUKE", "St. John's": "SJU", "Michigan State": "MSU",
-    "UConn": "UCONN", "Arizona": "ARIZ", "Arkansas": "ARK",
-    "Texas": "TEX", "Purdue": "PUR", "Iowa": "IOWA",
-    "Nebraska": "NEB", "Illinois": "ILL", "Houston": "HOU",
-    "Michigan": "MICH", "Alabama": "ALA", "Tennessee": "TENN",
-    "Iowa State": "ISU",
+    "Duke": "DUKE", "UConn": "UCONN", "Arizona": "ARIZ", "Purdue": "PUR",
+    "Iowa": "IOWA", "Illinois": "ILL", "Michigan": "MICH", "Tennessee": "TENN",
 }
 
 TEAM_COLORS = {
