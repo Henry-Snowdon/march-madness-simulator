@@ -136,7 +136,7 @@ st.markdown("""
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data_e8')
 
 BRACKET_TREE = {
-    57: (49, 50), 58: (51, 52), 59: (53, 54), 60: (55, 56),
+    57: (49, 50), 58: (51, 52), 59: (55, 56), 60: (53, 54),
     61: (57, 60), 62: (58, 59), 63: (61, 62),
 }
 SLOT_ROUND       = {**{s: 4 for s in range(57, 61)}, 61: 5, 62: 5, 63: 6}
@@ -214,10 +214,10 @@ def team_pill(team):
             f'white-space:nowrap;">{team}</span>')
 
 MATCHUPS = [
-    ("East",    57, "Duke",    "UConn"),
-    ("West",    58, "Arizona", "Purdue"),
-    ("Midwest", 59, "Iowa",    "Illinois"),
-    ("South",   60, "Michigan","Tennessee"),
+    ("East",    57, "Duke",     "UConn"),
+    ("West",    58, "Arizona",  "Purdue"),
+    ("South",   59, "Michigan", "Tennessee"),
+    ("Midwest", 60, "Iowa",     "Illinois"),
 ]
 
 # ─── HTML TABLE HELPER ───────────────────────────────────────────────────────
