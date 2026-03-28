@@ -218,10 +218,10 @@ MATCHUPS = [
     ("East",    50, "Michigan State","UConn"),
     ("West",    51, "Arizona",       "Arkansas"),
     ("West",    52, "Texas",         "Purdue"),
-    ("Midwest", 53, "Iowa",          "Nebraska"),
-    ("Midwest", 54, "Illinois",      "Houston"),
-    ("South",   55, "Michigan",      "Alabama"),
-    ("South",   56, "Tennessee",     "Iowa State"),
+    ("South",   53, "Iowa",          "Nebraska"),
+    ("South",   54, "Illinois",      "Houston"),
+    ("Midwest", 55, "Michigan",      "Alabama"),
+    ("Midwest", 56, "Tennessee",     "Iowa State"),
 ]
 
 # ─── HTML TABLE HELPER ───────────────────────────────────────────────────────
