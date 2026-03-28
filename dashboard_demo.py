@@ -312,12 +312,6 @@ def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
     all_results = np.zeros((256, len(bracket_ids)))
     scen_probs  = np.zeros(256)
 
-    # Build completed results dict from all slots with actual_winner_id
-    slots_raw = pd.read_csv(os.path.join(DATA_DIR, 'slots.csv'))
-    completed = {int(r['slot_id']): int(r['actual_winner_id'])
-                 for _, r in slots_raw.iterrows()
-                 if pd.notna(r['actual_winner_id'])}
-
     prog = st.progress(0, text="Running simulations...")
     for pi, perm in enumerate(all_perms):
         s16f = {}
@@ -326,7 +320,7 @@ def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
             if sid not in forced_outcomes:
                 s16f[sid] = game['team_1'] if perm[gi] == 0 else game['team_2']
         scen_probs[pi] = sim32.scenario_kenpom_prob(perm, s16_info, strength_map, forced_outcomes)
-        aw = sim32.simulate_vectorized(n_sims, s16f, strength_map, slots[slots['slot_id'].isin(S16_SLOTS)], forced_outcomes, completed)
+        aw = sim32.simulate_vectorized(n_sims, s16f, strength_map, slots[slots['slot_id'].isin(S16_SLOTS)], forced_outcomes)
         ts = sim32.score_all_brackets(n_sims, aw, picks, scores, bracket_ids)
         all_results[pi] = sim32.compute_win_probs(ts)
         if (pi+1) % 32 == 0:
