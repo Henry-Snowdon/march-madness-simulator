@@ -57,8 +57,8 @@ slot_id,round,region,match_time,potential_points,team_1_id,team_2_id,actual_winn
 56,3,Midwest,2026-03-27 22:10:00,40,22.0,18.0,22.0,18.0,Tennessee,Iowa State,Tennessee,Iowa State
 57,4,East,2026-03-29 00:00:00,80,1.0,2.0,,,Duke,UConn,,
 58,4,West,2026-03-29 00:00:00,80,17.0,50.0,,,Arizona,Purdue,,
-59,4,Midwest,2026-03-30 00:00:00,80,33.0,22.0,,,Michigan,Tennessee,,
-60,4,South,2026-03-30 00:00:00,80,57.0,35.0,,,Iowa,Illinois,,
+59,4,South,2026-03-30 00:00:00,80,57.0,35.0,,,Iowa,Illinois,,
+60,4,Midwest,2026-03-30 00:00:00,80,33.0,22.0,,,Michigan,Tennessee,,
 61,5,,2026-04-04 00:00:00,160,,,,,,,,
 62,5,,2026-04-04 00:00:00,160,,,,,,,,
 63,6,,2026-04-06 00:00:00,320,,,,,,,,
