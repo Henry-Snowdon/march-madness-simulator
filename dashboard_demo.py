@@ -320,7 +320,7 @@ def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
             if sid not in forced_outcomes:
                 s16f[sid] = game['team_1'] if perm[gi] == 0 else game['team_2']
         scen_probs[pi] = sim32.scenario_kenpom_prob(perm, s16_info, strength_map, forced_outcomes)
-        aw = sim32.simulate_vectorized(n_sims, s16f, strength_map, slots, forced_outcomes)
+        aw = sim32.simulate_vectorized(n_sims, s16f, strength_map, slots[slots['slot_id'].isin(S16_SLOTS)], forced_outcomes)
         ts = sim32.score_all_brackets(n_sims, aw, picks, scores, bracket_ids)
         all_results[pi] = sim32.compute_win_probs(ts)
         if (pi+1) % 32 == 0:
