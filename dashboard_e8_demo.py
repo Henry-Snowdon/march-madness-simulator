@@ -303,10 +303,10 @@ def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
     s16_info = [{'slot_id': int(r['slot_id']),
                  'team_1': int(r['team_1_id']),
                  'team_2': int(r['team_2_id'])}
-                for _, r in slots.iterrows()]
-    all_perms   = list(product([0, 1], repeat=8))
-    all_results = np.zeros((256, len(bracket_ids)))
-    scen_probs  = np.zeros(256)
+                for _, r in slots[slots['slot_id'].isin(S16_SLOTS)].iterrows()]
+    all_perms   = list(product([0, 1], repeat=4))
+    all_results = np.zeros((16, len(bracket_ids)))
+    scen_probs  = np.zeros(16)
 
     prog = st.progress(0, text="Running simulations...")
     for pi, perm in enumerate(all_perms):
@@ -316,11 +316,11 @@ def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
             if sid not in forced_outcomes:
                 s16f[sid] = game['team_1'] if perm[gi] == 0 else game['team_2']
         scen_probs[pi] = sim32.scenario_kenpom_prob(perm, s16_info, strength_map, forced_outcomes)
-        aw = sim32.simulate_vectorized(n_sims, s16f, strength_map, slots, forced_outcomes)
+        aw = sim32.simulate_vectorized(n_sims, s16f, strength_map, slots[slots['slot_id'].isin(S16_SLOTS + LATE_SLOTS)], forced_outcomes)
         ts = sim32.score_all_brackets(n_sims, aw, picks, scores, bracket_ids)
         all_results[pi] = sim32.compute_win_probs(ts)
-        if (pi+1) % 32 == 0:
-            prog.progress((pi+1)/256, text=f"Scenario {pi+1}/256...")
+        if (pi+1) % 4 == 0:
+            prog.progress((pi+1)/16, text=f"Scenario {pi+1}/16...")
     prog.empty()
 
     scen_probs  = scen_probs / scen_probs.sum()
@@ -429,7 +429,7 @@ def main():
     s16_info = [{'slot_id': int(r['slot_id']),
                  'team_1': int(r['team_1_id']),
                  'team_2': int(r['team_2_id'])}
-                for _, r in slots.iterrows()]
+                for _, r in slots[slots['slot_id'].isin(S16_SLOTS)].iterrows()]
 
     # ── NAV BAR ──────────────────────────────────────────────────────────────
     col_nav1, col_nav2, col_spacer = st.columns([1, 1, 6])
