@@ -2,7 +2,10 @@
 
 > *A full-stack data project combining SQL Server, Monte Carlo simulation, and an interactive Streamlit dashboard to answer the most important question in any March Madness pool.*
 
-> **Live demo:** [march-madness-simulator-elro.streamlit.app](https://march-madness-simulator-elro.streamlit.app) *(hosted on Streamlit Community Cloud — no setup required)*
+> **Live demo (Sweet 16):** [march-madness-simulator-elro.streamlit.app](https://march-madness-simulator-elro.streamlit.app) *(hosted on Streamlit Community Cloud — no setup required)*
+>
+> **Live demo (Elite 8):** [march-madness-simulator-elite8-elro.streamlit.app](https://march-madness-simulator-elite8-elro.streamlit.app) *(updated model with Elite 8 matchups and revised KenPom ratings)*
+
 
 ---
 
