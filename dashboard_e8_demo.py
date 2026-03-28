@@ -680,6 +680,8 @@ def main():
                     })
 
                 df = pd.DataFrame(rows)
+                if df.empty:
+                    return df
                 df = df.sort_values('Swing',
                     key=lambda x: pd.to_numeric(x, errors='coerce'),
                     ascending=False, na_position='last')
