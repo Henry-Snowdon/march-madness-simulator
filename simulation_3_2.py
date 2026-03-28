@@ -237,6 +237,8 @@ def simulate_vectorized(n_sims, s16_forced, sm, slots_df, forced, completed=None
     if completed:
         for sid, winner_id in completed.items():
             aw[sid] = np.full(n_sims, winner_id, dtype=np.int64)
+    # Only iterate over S16_SLOTS to avoid processing already-known slots
+    slots_df = slots_df[slots_df['slot_id'].isin(S16_SLOTS)]
     for _, row in slots_df.iterrows():
         sid = int(row['slot_id']); ta = int(row['team_1_id']); tb = int(row['team_2_id'])
         if forced and sid in forced:
