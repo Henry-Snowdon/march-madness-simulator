@@ -231,8 +231,12 @@ def win_prob(a, b, sm):
     ra = sm.get(int(a), 20.0); rb = sm.get(int(b), 20.0)
     return 1 / (1 + np.exp(-0.15 * (ra - rb)))
 
-def simulate_vectorized(n_sims, s16_forced, sm, slots_df, forced):
+def simulate_vectorized(n_sims, s16_forced, sm, slots_df, forced, completed=None):
     aw = {}
+    # Pre-populate aw with completed game results so LATE_SLOTS can reference them
+    if completed:
+        for sid, winner_id in completed.items():
+            aw[sid] = np.full(n_sims, winner_id, dtype=np.int64)
     for _, row in slots_df.iterrows():
         sid = int(row['slot_id']); ta = int(row['team_1_id']); tb = int(row['team_2_id'])
         if forced and sid in forced:
