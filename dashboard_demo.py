@@ -307,7 +307,7 @@ def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
     s16_info = [{'slot_id': int(r['slot_id']),
                  'team_1': int(r['team_1_id']),
                  'team_2': int(r['team_2_id'])}
-                for _, r in slots.iterrows()]
+                for _, r in slots[slots['slot_id'].isin(S16_SLOTS)].iterrows()]
     all_perms   = list(product([0, 1], repeat=8))
     all_results = np.zeros((256, len(bracket_ids)))
     scen_probs  = np.zeros(256)
