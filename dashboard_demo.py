@@ -572,7 +572,7 @@ def main():
                     'Rank':               rank,
                     'Bracket':            name,
                     'Creator':            creator,
-                    'Predicted Champion': champion_map.get(bid, ''),
+                    'Predicted Champion': (f'<span style="background:{t_bg(champion_map.get(bid,""))};color:{t_fg(champion_map.get(bid,""))};padding:1px 6px;border-radius:3px;font-size:0.74rem;font-weight:700;">{champion_map.get(bid,"")}</span>' if champion_map.get(bid,'') else ''),
                     'Pts':                pts,
                     'Win %':              round(baseline[idx]*100, 2),
                 })
@@ -613,7 +613,8 @@ def main():
                                for bid in bids if bid in bracket_ids)
                 best_bid = max([b for b in bids if b in bid_to_idx],
                                key=lambda b: baseline[bid_to_idx[b]], default=None)
-                best_champ = champion_map.get(best_bid, '') if best_bid else ''
+                _champ = champion_map.get(best_bid, '') if best_bid else ''
+                best_champ = (f'<span style="background:{t_bg(_champ)};color:{t_fg(_champ)};padding:1px 6px;border-radius:3px;font-size:0.74rem;font-weight:700;">{_champ}</span>' if _champ else '')
                 rows.append({
                     'Rank':               rank,
                     'Person':             creator,
@@ -828,7 +829,7 @@ def main():
         st.caption("By Bracket")
         s = scores.sort_values('current_score', ascending=False).reset_index(drop=True)
         s.insert(0, 'Rank', range(1, len(s)+1))
-        s['Predicted Champion'] = s['bracket_id'].map(champion_map)
+        s['Predicted Champion'] = s['bracket_id'].map(lambda bid: (f'<span style="background:{t_bg(champion_map.get(bid,""))};color:{t_fg(champion_map.get(bid,""))};padding:1px 6px;border-radius:3px;font-size:0.74rem;font-weight:700;">{champion_map.get(bid,"")}</span>' if champion_map.get(bid,'') else ''))
         s_display = s[['Rank','bracket_name','bracket_creator','Predicted Champion','current_score']].rename(
             columns={'bracket_name':'Bracket','bracket_creator':'Creator','current_score':'Pts'}).copy()
 
@@ -859,7 +860,8 @@ def main():
                              for bid in bids if bid in bracket_ids)
             best_bid = max([b for b in bids if b in bracket_ids],
                            key=lambda b: int(scores[scores['bracket_id']==b]['current_score'].iloc[0]))
-            best_champ = champion_map.get(best_bid, '')
+            _champ = champion_map.get(best_bid, '')
+            best_champ = (f'<span style="background:{t_bg(_champ)};color:{t_fg(_champ)};padding:1px 6px;border-radius:3px;font-size:0.74rem;font-weight:700;">{_champ}</span>' if _champ else '')
             ps.append({'Person': creator, 'Best Score': best_score, 'Predicted Champion': best_champ, 'Brackets': len(bids)})
         ps_df = pd.DataFrame(ps).sort_values('Best Score', ascending=False).reset_index(drop=True)
         ps_df.insert(0, 'Rank', range(1, len(ps_df)+1))
