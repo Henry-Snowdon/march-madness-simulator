@@ -204,8 +204,8 @@ def team_pill(team):
 MATCHUPS = [
     ("East",    57, "Duke",     "UConn"),
     ("West",    58, "Arizona",  "Purdue"),
-    ("South",   59, "Michigan", "Tennessee"),
-    ("Midwest", 60, "Iowa",     "Illinois"),
+    ("South",   59, "Iowa",     "Illinois"),
+    ("Midwest", 60, "Michigan", "Tennessee"),
 ]
 
 # ─── HTML TABLE HELPER ───────────────────────────────────────────────────────
