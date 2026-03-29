@@ -813,7 +813,8 @@ def main():
         st.caption("By Bracket")
         s = scores.sort_values('current_score', ascending=False).reset_index(drop=True)
         s.insert(0, 'Rank', range(1, len(s)+1))
-        s_display = s[['Rank','bracket_name','bracket_creator','current_score']].rename(
+        s['Predicted Champion'] = s['bracket_id'].map(champion_map)
+        s_display = s[['Rank','bracket_name','bracket_creator','Predicted Champion','current_score']].rename(
             columns={'bracket_name':'Bracket','bracket_creator':'Creator','current_score':'Pts'}).copy()
 
         _hl_bracket = selected_bracket if (selected_bracket and selected_bracket != "All Brackets") else None
@@ -831,7 +832,7 @@ def main():
         def hl_s_br(row, hb=_hl_bracket, pb=_person_brackets_s):
             return (bool(hb and row['Bracket'] == hb) or
                     bool(pb and row['Bracket'] in pb))
-        st.markdown(html_table(rows_s_br, ['Rank','Bracket','Creator','Pts'],
+        st.markdown(html_table(rows_s_br, ['Rank','Bracket','Creator','Predicted Champion','Pts'],
             hl_s_br, {'Rank': '{:.0f}', 'Pts': '{:.0f}'}, height=280),
             unsafe_allow_html=True)
 
@@ -841,7 +842,10 @@ def main():
         for creator, bids in person_map.items():
             best_score = max(int(scores[scores['bracket_id']==bid]['current_score'].iloc[0])
                              for bid in bids if bid in bracket_ids)
-            ps.append({'Person': creator, 'Best Score': best_score, 'Brackets': len(bids)})
+            best_bid = max([b for b in bids if b in bracket_ids],
+                           key=lambda b: int(scores[scores['bracket_id']==b]['current_score'].iloc[0]))
+            best_champ = champion_map.get(best_bid, '')
+            ps.append({'Person': creator, 'Best Score': best_score, 'Predicted Champion': best_champ, 'Brackets': len(bids)})
         ps_df = pd.DataFrame(ps).sort_values('Best Score', ascending=False).reset_index(drop=True)
         ps_df.insert(0, 'Rank', range(1, len(ps_df)+1))
         _hl_person = st.session_state.get('highlighted_person', None)
@@ -853,7 +857,7 @@ def main():
         rows_s_pr = ps_df.to_dict('records')
         def hl_s_pr(row, hp=_hl_person):
             return bool(hp and row['Person'] == hp)
-        st.markdown(html_table(rows_s_pr, ['Rank','Person','Best Score','Brackets'],
+        st.markdown(html_table(rows_s_pr, ['Rank','Person','Best Score','Predicted Champion','Brackets'],
             hl_s_pr, {'Rank': '{:.0f}', 'Best Score': '{:.0f}', 'Brackets': '{:.0f}'},
             height=280), unsafe_allow_html=True)
 
