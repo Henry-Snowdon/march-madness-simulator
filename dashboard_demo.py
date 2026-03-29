@@ -289,6 +289,7 @@ def load_data():
     slots_raw = pd.read_csv(os.path.join(DATA_DIR, 'slots.csv'))
     strengths = pd.read_csv(os.path.join(DATA_DIR, 'strengths.csv'))
     teams     = pd.read_csv(os.path.join(DATA_DIR, 'teams.csv'))
+    brackets  = pd.read_csv(os.path.join(DATA_DIR, 'brackets.csv'))
 
     # picks: only unplayed slots, matching expected column name
     picks = picks_raw.rename(columns={'predicted_winner_id': 'predicted_winner_id'})
@@ -299,7 +300,7 @@ def load_data():
         slots_raw['team_1_id'].notna()
     ][['slot_id','round','region','team_1_id','team_2_id']].copy()
 
-    return scores, picks, slots, strengths, teams
+    return scores, picks, slots, strengths, teams, brackets
 
 # ─── SIMULATION ──────────────────────────────────────────────────────────────
 def run_simulation(n_sims, forced_outcomes, scores, picks, slots,
@@ -417,12 +418,13 @@ def main():
     sim32 = load_sim_module()
 
     try:
-        scores, picks, slots, strengths, teams = load_data()
+        scores, picks, slots, strengths, teams, brackets = load_data()
     except Exception as e:
         st.error(f"Could not load data files: {e}. Make sure the data/ folder exists.")
         st.stop()
 
     strength_map  = dict(zip(strengths['team_id'].astype(int), strengths['kenpom_net_rating']))
+    champion_map  = dict(zip(brackets['bracket_id'], brackets['champion']))
     team_name_map = dict(zip(teams['team_id'].astype(int), teams['team_name']))
     team_id_map   = dict(zip(teams['team_name'], teams['team_id'].astype(int)))
     bracket_ids   = scores['bracket_id'].tolist()
@@ -567,11 +569,12 @@ def main():
                 creator = scores[scores['bracket_id'] == bid]['bracket_creator'].iloc[0]
                 pts     = int(scores[scores['bracket_id'] == bid]['current_score'].iloc[0])
                 rows.append({
-                    'Rank':    rank,
-                    'Bracket': name,
-                    'Creator': creator,
-                    'Pts':     pts,
-                    'Win %':   round(baseline[idx]*100, 2),
+                    'Rank':               rank,
+                    'Bracket':            name,
+                    'Creator':            creator,
+                    'Predicted Champion': champion_map.get(bid, ''),
+                    'Pts':                pts,
+                    'Win %':              round(baseline[idx]*100, 2),
                 })
             df = pd.DataFrame(rows)
             sel_name = selected_bracket if selected_bracket != "All Brackets" else None
@@ -593,7 +596,7 @@ def main():
             def hl_br(row):
                 return (bool(sel_name and row['Bracket'] == sel_name) or
                         bool(_person_brackets and row['Bracket'] in _person_brackets))
-            st.markdown(html_table(rows_data, ['Rank','Bracket','Creator','Pts','Win %'],
+            st.markdown(html_table(rows_data, ['Rank','Bracket','Creator','Predicted Champion','Pts','Win %'],
                 hl_br, {'Win %': '{:.2f}%', 'Pts': '{:.0f}', 'Rank': '{:.0f}'}, height=460),
                 unsafe_allow_html=True)
 
@@ -608,14 +611,18 @@ def main():
                 best_b   = round(max(baseline[i] for i in bid_idxs)*100, 2) if bid_idxs else 0
                 best_pts = max(int(scores[scores['bracket_id']==bid]['current_score'].iloc[0])
                                for bid in bids if bid in bracket_ids)
+                best_bid = max([b for b in bids if b in bid_to_idx],
+                               key=lambda b: baseline[bid_to_idx[b]], default=None)
+                best_champ = champion_map.get(best_bid, '') if best_bid else ''
                 rows.append({
-                    'Rank':         rank,
-                    'Person':       creator,
-                    'No. Brackets': len(bids),
-                    'Brackets':     ", ".join([bracket_names[b] for b in bids if b in bracket_names]),
-                    'Best Pts':     best_pts,
-                    'Person Win %': round(person_baseline[pi]*100, 2),
-                    'Best Bracket': best_b,
+                    'Rank':               rank,
+                    'Person':             creator,
+                    'No. Brackets':       len(bids),
+                    'Brackets':           ", ".join([bracket_names[b] for b in bids if b in bracket_names]),
+                    'Best Pts':           best_pts,
+                    'Predicted Champion': best_champ,
+                    'Person Win %':       round(person_baseline[pi]*100, 2),
+                    'Best Bracket':       best_b,
                 })
             df_p = pd.DataFrame(rows)
             sel_person = selected_person if selected_person != "All People" else None
@@ -624,7 +631,7 @@ def main():
             def hl_pr(row):
                 return bool(highlighted_person and row['Person'] == highlighted_person)
             st.markdown(html_table(rows_data_p,
-                ['Rank','Person','No. Brackets','Brackets','Best Pts','Person Win %','Best Bracket'],
+                ['Rank','Person','No. Brackets','Brackets','Best Pts','Predicted Champion','Person Win %','Best Bracket'],
                 hl_pr, {'Person Win %': '{:.2f}%', 'Best Bracket': '{:.2f}%',
                         'Best Pts': '{:.0f}', 'Rank': '{:.0f}', 'No. Brackets': '{:.0f}'},
                 height=460), unsafe_allow_html=True)
@@ -821,7 +828,8 @@ def main():
         st.caption("By Bracket")
         s = scores.sort_values('current_score', ascending=False).reset_index(drop=True)
         s.insert(0, 'Rank', range(1, len(s)+1))
-        s_display = s[['Rank','bracket_name','bracket_creator','current_score']].rename(
+        s['Predicted Champion'] = s['bracket_id'].map(champion_map)
+        s_display = s[['Rank','bracket_name','bracket_creator','Predicted Champion','current_score']].rename(
             columns={'bracket_name':'Bracket','bracket_creator':'Creator','current_score':'Pts'}).copy()
 
         _hl_bracket = selected_bracket if (selected_bracket and selected_bracket != "All Brackets") else None
@@ -839,7 +847,7 @@ def main():
         def hl_s_br(row, hb=_hl_bracket, pb=_person_brackets_s):
             return (bool(hb and row['Bracket'] == hb) or
                     bool(pb and row['Bracket'] in pb))
-        st.markdown(html_table(rows_s_br, ['Rank','Bracket','Creator','Pts'],
+        st.markdown(html_table(rows_s_br, ['Rank','Bracket','Creator','Predicted Champion','Pts'],
             hl_s_br, {'Rank': '{:.0f}', 'Pts': '{:.0f}'}, height=280),
             unsafe_allow_html=True)
 
@@ -849,7 +857,10 @@ def main():
         for creator, bids in person_map.items():
             best_score = max(int(scores[scores['bracket_id']==bid]['current_score'].iloc[0])
                              for bid in bids if bid in bracket_ids)
-            ps.append({'Person': creator, 'Best Score': best_score, 'Brackets': len(bids)})
+            best_bid = max([b for b in bids if b in bracket_ids],
+                           key=lambda b: int(scores[scores['bracket_id']==b]['current_score'].iloc[0]))
+            best_champ = champion_map.get(best_bid, '')
+            ps.append({'Person': creator, 'Best Score': best_score, 'Predicted Champion': best_champ, 'Brackets': len(bids)})
         ps_df = pd.DataFrame(ps).sort_values('Best Score', ascending=False).reset_index(drop=True)
         ps_df.insert(0, 'Rank', range(1, len(ps_df)+1))
         _hl_person = st.session_state.get('highlighted_person', None)
@@ -861,7 +872,7 @@ def main():
         rows_s_pr = ps_df.to_dict('records')
         def hl_s_pr(row, hp=_hl_person):
             return bool(hp and row['Person'] == hp)
-        st.markdown(html_table(rows_s_pr, ['Rank','Person','Best Score','Brackets'],
+        st.markdown(html_table(rows_s_pr, ['Rank','Person','Best Score','Predicted Champion','Brackets'],
             hl_s_pr, {'Rank': '{:.0f}', 'Best Score': '{:.0f}', 'Brackets': '{:.0f}'},
             height=280), unsafe_allow_html=True)
 
