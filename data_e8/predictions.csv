@@ -55,10 +55,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 1,Go sports team woo,Dani Adler,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 1,Go sports team woo,Dani Adler,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 1,Go sports team woo,Dani Adler,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Tennessee,Tennessee,Iowa State,0,Incorrect
-1,Go sports team woo,Dani Adler,57,4,East,2026-03-29 00:00:00,80,,,Michigan State,Duke,,,0,Not Played
-1,Go sports team woo,Dani Adler,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Purdue,,,0,Not Played
-1,Go sports team woo,Dani Adler,59,4,South,2026-03-30 00:00:00,80,,,Houston,Florida,,,0,Not Played
-1,Go sports team woo,Dani Adler,60,4,Midwest,2026-03-30 00:00:00,80,,,Iowa State,Michigan,,,0,Not Played
+1,Go sports team woo,Dani Adler,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Michigan State,Duke,,,0,Not Played
+1,Go sports team woo,Dani Adler,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+1,Go sports team woo,Dani Adler,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Florida,,,0,Not Played
+1,Go sports team woo,Dani Adler,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Iowa State,Michigan,,,0,Not Played
 1,Go sports team woo,Dani Adler,61,5,,2026-04-04 00:00:00,160,,,Michigan State,Houston,,,0,Not Played
 1,Go sports team woo,Dani Adler,62,5,,2026-04-04 00:00:00,160,,,Arizona,Iowa State,,,0,Not Played
 1,Go sports team woo,Dani Adler,63,6,,2026-04-06 00:00:00,320,,,Arizona,Michigan State,,,0,Not Played
@@ -118,10 +118,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 2,Hanime.tv Corwith 1,Jordan Corwith,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 2,Hanime.tv Corwith 1,Jordan Corwith,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 2,Hanime.tv Corwith 1,Jordan Corwith,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-2,Hanime.tv Corwith 1,Jordan Corwith,57,4,East,2026-03-29 00:00:00,80,,,Michigan State,Duke,,,0,Not Played
-2,Hanime.tv Corwith 1,Jordan Corwith,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-2,Hanime.tv Corwith 1,Jordan Corwith,59,4,South,2026-03-30 00:00:00,80,,,Houston,Nebraska,,,0,Not Played
-2,Hanime.tv Corwith 1,Jordan Corwith,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Virginia,,,0,Not Played
+2,Hanime.tv Corwith 1,Jordan Corwith,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Michigan State,Duke,,,0,Not Played
+2,Hanime.tv Corwith 1,Jordan Corwith,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+2,Hanime.tv Corwith 1,Jordan Corwith,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Nebraska,,,0,Not Played
+2,Hanime.tv Corwith 1,Jordan Corwith,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Virginia,,,0,Not Played
 2,Hanime.tv Corwith 1,Jordan Corwith,61,5,,2026-04-04 00:00:00,160,,,Michigan State,Houston,,,0,Not Played
 2,Hanime.tv Corwith 1,Jordan Corwith,62,5,,2026-04-04 00:00:00,160,,,Michigan,Arizona,,,0,Not Played
 2,Hanime.tv Corwith 1,Jordan Corwith,63,6,,2026-04-06 00:00:00,320,,,Michigan State,Michigan,,,0,Not Played
@@ -181,10 +181,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 3,Slaying Spartans,Luciano Lorusso,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 3,Slaying Spartans,Luciano Lorusso,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Texas Tech,Michigan,Alabama,1,Correct
 3,Slaying Spartans,Luciano Lorusso,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-3,Slaying Spartans,Luciano Lorusso,57,4,East,2026-03-29 00:00:00,80,,,Michigan State,Duke,,,0,Not Played
-3,Slaying Spartans,Luciano Lorusso,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-3,Slaying Spartans,Luciano Lorusso,59,4,South,2026-03-30 00:00:00,80,,,Florida,Illinois,,,0,Not Played
-3,Slaying Spartans,Luciano Lorusso,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Virginia,,,0,Not Played
+3,Slaying Spartans,Luciano Lorusso,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Michigan State,Duke,,,0,Not Played
+3,Slaying Spartans,Luciano Lorusso,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+3,Slaying Spartans,Luciano Lorusso,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Illinois,,,0,Not Played
+3,Slaying Spartans,Luciano Lorusso,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Virginia,,,0,Not Played
 3,Slaying Spartans,Luciano Lorusso,61,5,,2026-04-04 00:00:00,160,,,Michigan State,Florida,,,0,Not Played
 3,Slaying Spartans,Luciano Lorusso,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 3,Slaying Spartans,Luciano Lorusso,63,6,,2026-04-06 00:00:00,320,,,Michigan State,Arizona,,,0,Not Played
@@ -244,10 +244,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 4,PAC-12 Erasure,Huy Pham,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 4,PAC-12 Erasure,Huy Pham,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 4,PAC-12 Erasure,Huy Pham,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Tennessee,Iowa State,Tennessee,Iowa State,1,Correct
-4,PAC-12 Erasure,Huy Pham,57,4,East,2026-03-29 00:00:00,80,,,Michigan State,Duke,,,0,Not Played
-4,PAC-12 Erasure,Huy Pham,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Purdue,,,0,Not Played
-4,PAC-12 Erasure,Huy Pham,59,4,South,2026-03-30 00:00:00,80,,,Illinois,Florida,,,0,Not Played
-4,PAC-12 Erasure,Huy Pham,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Tennessee,,,0,Not Played
+4,PAC-12 Erasure,Huy Pham,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Michigan State,Duke,,,0,Not Played
+4,PAC-12 Erasure,Huy Pham,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+4,PAC-12 Erasure,Huy Pham,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Illinois,Florida,,,0,Not Played
+4,PAC-12 Erasure,Huy Pham,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Tennessee,,,0,Not Played
 4,PAC-12 Erasure,Huy Pham,61,5,,2026-04-04 00:00:00,160,,,Michigan State,Illinois,,,0,Not Played
 4,PAC-12 Erasure,Huy Pham,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 4,PAC-12 Erasure,Huy Pham,63,6,,2026-04-06 00:00:00,320,,,Arizona,Michigan State,,,0,Not Played
@@ -307,10 +307,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,57,4,East,2026-03-29 00:00:00,80,,,St. John's,Michigan State,,,0,Not Played
-5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,58,4,West,2026-03-29 00:00:00,80,,,Purdue,Arizona,,,0,Not Played
-5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,59,4,South,2026-03-30 00:00:00,80,,,Vanderbilt,Illinois,,,0,Not Played
-5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Virginia,,,0,Not Played
+5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,St. John's,Michigan State,,,0,Not Played
+5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Purdue,Arizona,,,0,Not Played
+5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Vanderbilt,Illinois,,,0,Not Played
+5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Virginia,,,0,Not Played
 5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,61,5,,2026-04-04 00:00:00,160,,,St. John's,Vanderbilt,,,0,Not Played
 5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,62,5,,2026-04-04 00:00:00,160,,,Michigan,Purdue,,,0,Not Played
 5,ESPNFAN3143537735's Picks 1,Spencer Maginsky,63,6,,2026-04-06 00:00:00,320,,,St. John's,Michigan,,,0,Not Played
@@ -370,10 +370,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 6,Ying,Michael Koufakis,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 6,Ying,Michael Koufakis,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 6,Ying,Michael Koufakis,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-6,Ying,Michael Koufakis,57,4,East,2026-03-29 00:00:00,80,,,Duke,Michigan State,,,0,Not Played
-6,Ying,Michael Koufakis,58,4,West,2026-03-29 00:00:00,80,,,Arkansas,Purdue,,,0,Not Played
-6,Ying,Michael Koufakis,59,4,South,2026-03-30 00:00:00,80,,,Houston,Florida,,,0,Not Played
-6,Ying,Michael Koufakis,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+6,Ying,Michael Koufakis,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,Michigan State,,,0,Not Played
+6,Ying,Michael Koufakis,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arkansas,Purdue,,,0,Not Played
+6,Ying,Michael Koufakis,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Florida,,,0,Not Played
+6,Ying,Michael Koufakis,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 6,Ying,Michael Koufakis,61,5,,2026-04-04 00:00:00,160,,,Houston,Duke,,,0,Not Played
 6,Ying,Michael Koufakis,62,5,,2026-04-04 00:00:00,160,,,Michigan,Arkansas,,,0,Not Played
 6,Ying,Michael Koufakis,63,6,,2026-04-06 00:00:00,320,,,Michigan,Houston,,,0,Not Played
@@ -433,10 +433,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 7,Favorites Frenzy,Luciano Lorusso,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 7,Favorites Frenzy,Luciano Lorusso,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Texas Tech,Michigan,Alabama,1,Correct
 7,Favorites Frenzy,Luciano Lorusso,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-7,Favorites Frenzy,Luciano Lorusso,57,4,East,2026-03-29 00:00:00,80,,,UConn,Duke,,,0,Not Played
-7,Favorites Frenzy,Luciano Lorusso,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Purdue,,,0,Not Played
-7,Favorites Frenzy,Luciano Lorusso,59,4,South,2026-03-30 00:00:00,80,,,Florida,Houston,,,0,Not Played
-7,Favorites Frenzy,Luciano Lorusso,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+7,Favorites Frenzy,Luciano Lorusso,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,UConn,Duke,,,0,Not Played
+7,Favorites Frenzy,Luciano Lorusso,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+7,Favorites Frenzy,Luciano Lorusso,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Houston,,,0,Not Played
+7,Favorites Frenzy,Luciano Lorusso,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 7,Favorites Frenzy,Luciano Lorusso,61,5,,2026-04-04 00:00:00,160,,,UConn,Florida,,,0,Not Played
 7,Favorites Frenzy,Luciano Lorusso,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 7,Favorites Frenzy,Luciano Lorusso,63,6,,2026-04-06 00:00:00,320,,,Arizona,UConn,,,0,Not Played
@@ -496,10 +496,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 8,ESPNfan9853979754's Picks 1,Gigi Pan,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 8,ESPNfan9853979754's Picks 1,Gigi Pan,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 8,ESPNfan9853979754's Picks 1,Gigi Pan,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-8,ESPNfan9853979754's Picks 1,Gigi Pan,57,4,East,2026-03-29 00:00:00,80,,,Duke,Michigan State,,,0,Not Played
-8,ESPNfan9853979754's Picks 1,Gigi Pan,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-8,ESPNfan9853979754's Picks 1,Gigi Pan,59,4,South,2026-03-30 00:00:00,80,,,Florida,Houston,,,0,Not Played
-8,ESPNfan9853979754's Picks 1,Gigi Pan,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Virginia,,,0,Not Played
+8,ESPNfan9853979754's Picks 1,Gigi Pan,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,Michigan State,,,0,Not Played
+8,ESPNfan9853979754's Picks 1,Gigi Pan,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+8,ESPNfan9853979754's Picks 1,Gigi Pan,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Houston,,,0,Not Played
+8,ESPNfan9853979754's Picks 1,Gigi Pan,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Virginia,,,0,Not Played
 8,ESPNfan9853979754's Picks 1,Gigi Pan,61,5,,2026-04-04 00:00:00,160,,,Florida,Duke,,,0,Not Played
 8,ESPNfan9853979754's Picks 1,Gigi Pan,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 8,ESPNfan9853979754's Picks 1,Gigi Pan,63,6,,2026-04-06 00:00:00,320,,,Florida,Arizona,,,0,Not Played
@@ -559,10 +559,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 9,Bing bong,Ben Foster,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 9,Bing bong,Ben Foster,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Hofstra,Michigan,Alabama,1,Correct
 9,Bing bong,Ben Foster,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Tennessee,Tennessee,Iowa State,0,Incorrect
-9,Bing bong,Ben Foster,57,4,East,2026-03-29 00:00:00,80,,,Duke,UConn,,,0,Not Played
-9,Bing bong,Ben Foster,58,4,West,2026-03-29 00:00:00,80,,,Purdue,Arizona,,,0,Not Played
-9,Bing bong,Ben Foster,59,4,South,2026-03-30 00:00:00,80,,,Illinois,Vanderbilt,,,0,Not Played
-9,Bing bong,Ben Foster,60,4,Midwest,2026-03-30 00:00:00,80,,,Iowa State,Michigan,,,0,Not Played
+9,Bing bong,Ben Foster,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,UConn,,,0,Not Played
+9,Bing bong,Ben Foster,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+9,Bing bong,Ben Foster,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Illinois,Vanderbilt,,,0,Not Played
+9,Bing bong,Ben Foster,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Iowa State,Michigan,,,0,Not Played
 9,Bing bong,Ben Foster,61,5,,2026-04-04 00:00:00,160,,,Illinois,Duke,,,0,Not Played
 9,Bing bong,Ben Foster,62,5,,2026-04-04 00:00:00,160,,,Iowa State,Purdue,,,0,Not Played
 9,Bing bong,Ben Foster,63,6,,2026-04-06 00:00:00,320,,,Iowa State,Illinois,,,0,Not Played
@@ -622,10 +622,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 10,Heisha Khan,Josh Gordon,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 10,Heisha Khan,Josh Gordon,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Akron,Michigan,Alabama,1,Correct
 10,Heisha Khan,Josh Gordon,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-10,Heisha Khan,Josh Gordon,57,4,East,2026-03-29 00:00:00,80,,,St. John's,Michigan State,,,0,Not Played
-10,Heisha Khan,Josh Gordon,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Purdue,,,0,Not Played
-10,Heisha Khan,Josh Gordon,59,4,South,2026-03-30 00:00:00,80,,,Illinois,Vanderbilt,,,0,Not Played
-10,Heisha Khan,Josh Gordon,60,4,Midwest,2026-03-30 00:00:00,80,,,Iowa State,Michigan,,,0,Not Played
+10,Heisha Khan,Josh Gordon,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,St. John's,Michigan State,,,0,Not Played
+10,Heisha Khan,Josh Gordon,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+10,Heisha Khan,Josh Gordon,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Illinois,Vanderbilt,,,0,Not Played
+10,Heisha Khan,Josh Gordon,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Iowa State,Michigan,,,0,Not Played
 10,Heisha Khan,Josh Gordon,61,5,,2026-04-04 00:00:00,160,,,St. John's,Illinois,,,0,Not Played
 10,Heisha Khan,Josh Gordon,62,5,,2026-04-04 00:00:00,160,,,Arizona,Iowa State,,,0,Not Played
 10,Heisha Khan,Josh Gordon,63,6,,2026-04-06 00:00:00,320,,,Arizona,St. John's,,,0,Not Played
@@ -685,10 +685,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 11,Split End,Grant Schwartz,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 11,Split End,Grant Schwartz,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 11,Split End,Grant Schwartz,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Tennessee,Tennessee,Iowa State,0,Incorrect
-11,Split End,Grant Schwartz,57,4,East,2026-03-29 00:00:00,80,,,St. John's,Michigan State,,,0,Not Played
-11,Split End,Grant Schwartz,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-11,Split End,Grant Schwartz,59,4,South,2026-03-30 00:00:00,80,,,Houston,Vanderbilt,,,0,Not Played
-11,Split End,Grant Schwartz,60,4,Midwest,2026-03-30 00:00:00,80,,,Iowa State,Michigan,,,0,Not Played
+11,Split End,Grant Schwartz,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,St. John's,Michigan State,,,0,Not Played
+11,Split End,Grant Schwartz,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+11,Split End,Grant Schwartz,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Vanderbilt,,,0,Not Played
+11,Split End,Grant Schwartz,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Iowa State,Michigan,,,0,Not Played
 11,Split End,Grant Schwartz,61,5,,2026-04-04 00:00:00,160,,,St. John's,Houston,,,0,Not Played
 11,Split End,Grant Schwartz,62,5,,2026-04-04 00:00:00,160,,,Arizona,Iowa State,,,0,Not Played
 11,Split End,Grant Schwartz,63,6,,2026-04-06 00:00:00,320,,,St. John's,Arizona,,,0,Not Played
@@ -748,10 +748,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 12,oh! what a lovely bracket,Henry Snowdon,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 12,oh! what a lovely bracket,Henry Snowdon,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 12,oh! what a lovely bracket,Henry Snowdon,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-12,oh! what a lovely bracket,Henry Snowdon,57,4,East,2026-03-29 00:00:00,80,,,Duke,UConn,,,0,Not Played
-12,oh! what a lovely bracket,Henry Snowdon,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-12,oh! what a lovely bracket,Henry Snowdon,59,4,South,2026-03-30 00:00:00,80,,,Houston,Florida,,,0,Not Played
-12,oh! what a lovely bracket,Henry Snowdon,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+12,oh! what a lovely bracket,Henry Snowdon,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,UConn,,,0,Not Played
+12,oh! what a lovely bracket,Henry Snowdon,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+12,oh! what a lovely bracket,Henry Snowdon,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Florida,,,0,Not Played
+12,oh! what a lovely bracket,Henry Snowdon,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 12,oh! what a lovely bracket,Henry Snowdon,61,5,,2026-04-04 00:00:00,160,,,Duke,Houston,,,0,Not Played
 12,oh! what a lovely bracket,Henry Snowdon,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 12,oh! what a lovely bracket,Henry Snowdon,63,6,,2026-04-06 00:00:00,320,,,Duke,Arizona,,,0,Not Played
@@ -811,10 +811,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 13,Achris,Aaron Kong,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 13,Achris,Aaron Kong,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 13,Achris,Aaron Kong,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Tennessee,Tennessee,Iowa State,0,Incorrect
-13,Achris,Aaron Kong,57,4,East,2026-03-29 00:00:00,80,,,Duke,Louisville,,,0,Not Played
-13,Achris,Aaron Kong,58,4,West,2026-03-29 00:00:00,80,,,Gonzaga,Arizona,,,0,Not Played
-13,Achris,Aaron Kong,59,4,South,2026-03-30 00:00:00,80,,,Illinois,Florida,,,0,Not Played
-13,Achris,Aaron Kong,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+13,Achris,Aaron Kong,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,Louisville,,,0,Not Played
+13,Achris,Aaron Kong,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Gonzaga,Arizona,,,0,Not Played
+13,Achris,Aaron Kong,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Illinois,Florida,,,0,Not Played
+13,Achris,Aaron Kong,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 13,Achris,Aaron Kong,61,5,,2026-04-04 00:00:00,160,,,Duke,Illinois,,,0,Not Played
 13,Achris,Aaron Kong,62,5,,2026-04-04 00:00:00,160,,,Michigan,Gonzaga,,,0,Not Played
 13,Achris,Aaron Kong,63,6,,2026-04-06 00:00:00,320,,,Duke,Michigan,,,0,Not Played
@@ -874,10 +874,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 14,bulloch12's Picks 2,Bennett Tulloch,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,North Carolina,Illinois,Houston,0,Incorrect
 14,bulloch12's Picks 2,Bennett Tulloch,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Texas Tech,Michigan,Alabama,1,Correct
 14,bulloch12's Picks 2,Bennett Tulloch,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-14,bulloch12's Picks 2,Bennett Tulloch,57,4,East,2026-03-29 00:00:00,80,,,Michigan State,Duke,,,0,Not Played
-14,bulloch12's Picks 2,Bennett Tulloch,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-14,bulloch12's Picks 2,Bennett Tulloch,59,4,South,2026-03-30 00:00:00,80,,,Houston,Florida,,,0,Not Played
-14,bulloch12's Picks 2,Bennett Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+14,bulloch12's Picks 2,Bennett Tulloch,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Michigan State,Duke,,,0,Not Played
+14,bulloch12's Picks 2,Bennett Tulloch,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+14,bulloch12's Picks 2,Bennett Tulloch,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Florida,,,0,Not Played
+14,bulloch12's Picks 2,Bennett Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 14,bulloch12's Picks 2,Bennett Tulloch,61,5,,2026-04-04 00:00:00,160,,,Houston,Michigan State,,,0,Not Played
 14,bulloch12's Picks 2,Bennett Tulloch,62,5,,2026-04-04 00:00:00,160,,,Michigan,Arizona,,,0,Not Played
 14,bulloch12's Picks 2,Bennett Tulloch,63,6,,2026-04-06 00:00:00,320,,,Michigan,Houston,,,0,Not Played
@@ -937,10 +937,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 15,Victor Gator,Dani Adler,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 15,Victor Gator,Dani Adler,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Alabama,Michigan,Michigan,Alabama,0,Incorrect
 15,Victor Gator,Dani Adler,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-15,Victor Gator,Dani Adler,57,4,East,2026-03-29 00:00:00,80,,,Duke,Michigan State,,,0,Not Played
-15,Victor Gator,Dani Adler,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-15,Victor Gator,Dani Adler,59,4,South,2026-03-30 00:00:00,80,,,Florida,Illinois,,,0,Not Played
-15,Victor Gator,Dani Adler,60,4,Midwest,2026-03-30 00:00:00,80,,,Iowa State,Alabama,,,0,Not Played
+15,Victor Gator,Dani Adler,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,Michigan State,,,0,Not Played
+15,Victor Gator,Dani Adler,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+15,Victor Gator,Dani Adler,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Illinois,,,0,Not Played
+15,Victor Gator,Dani Adler,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Iowa State,Alabama,,,0,Not Played
 15,Victor Gator,Dani Adler,61,5,,2026-04-04 00:00:00,160,,,Florida,Duke,,,0,Not Played
 15,Victor Gator,Dani Adler,62,5,,2026-04-04 00:00:00,160,,,Iowa State,Arizona,,,0,Not Played
 15,Victor Gator,Dani Adler,63,6,,2026-04-06 00:00:00,320,,,Florida,Iowa State,,,0,Not Played
@@ -1000,10 +1000,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 16,Ya motha,Ben Foster,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 16,Ya motha,Ben Foster,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 16,Ya motha,Ben Foster,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-16,Ya motha,Ben Foster,57,4,East,2026-03-29 00:00:00,80,,,St. John's,Michigan State,,,0,Not Played
-16,Ya motha,Ben Foster,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Gonzaga,,,0,Not Played
-16,Ya motha,Ben Foster,59,4,South,2026-03-30 00:00:00,80,,,Houston,Florida,,,0,Not Played
-16,Ya motha,Ben Foster,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+16,Ya motha,Ben Foster,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,St. John's,Michigan State,,,0,Not Played
+16,Ya motha,Ben Foster,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Gonzaga,,,0,Not Played
+16,Ya motha,Ben Foster,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Florida,,,0,Not Played
+16,Ya motha,Ben Foster,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 16,Ya motha,Ben Foster,61,5,,2026-04-04 00:00:00,160,,,Houston,St. John's,,,0,Not Played
 16,Ya motha,Ben Foster,62,5,,2026-04-04 00:00:00,160,,,Michigan,Arizona,,,0,Not Played
 16,Ya motha,Ben Foster,63,6,,2026-04-06 00:00:00,320,,,Houston,Michigan,,,0,Not Played
@@ -1063,10 +1063,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 17,bulloch12's Picks 3,Bennett Tulloch,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 17,bulloch12's Picks 3,Bennett Tulloch,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Akron,Michigan,Alabama,1,Correct
 17,bulloch12's Picks 3,Bennett Tulloch,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Virginia,Tennessee,Iowa State,0,Incorrect
-17,bulloch12's Picks 3,Bennett Tulloch,57,4,East,2026-03-29 00:00:00,80,,,UConn,Duke,,,0,Not Played
-17,bulloch12's Picks 3,Bennett Tulloch,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Purdue,,,0,Not Played
-17,bulloch12's Picks 3,Bennett Tulloch,59,4,South,2026-03-30 00:00:00,80,,,Florida,Houston,,,0,Not Played
-17,bulloch12's Picks 3,Bennett Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Iowa State,,,0,Not Played
+17,bulloch12's Picks 3,Bennett Tulloch,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,UConn,Duke,,,0,Not Played
+17,bulloch12's Picks 3,Bennett Tulloch,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+17,bulloch12's Picks 3,Bennett Tulloch,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Houston,,,0,Not Played
+17,bulloch12's Picks 3,Bennett Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Iowa State,,,0,Not Played
 17,bulloch12's Picks 3,Bennett Tulloch,61,5,,2026-04-04 00:00:00,160,,,Florida,UConn,,,0,Not Played
 17,bulloch12's Picks 3,Bennett Tulloch,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 17,bulloch12's Picks 3,Bennett Tulloch,63,6,,2026-04-06 00:00:00,320,,,Arizona,Florida,,,0,Not Played
@@ -1126,10 +1126,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 18,Heisha Khan 2,Josh Gordon,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 18,Heisha Khan 2,Josh Gordon,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Hofstra,Michigan,Alabama,1,Correct
 18,Heisha Khan 2,Josh Gordon,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-18,Heisha Khan 2,Josh Gordon,57,4,East,2026-03-29 00:00:00,80,,,Duke,Michigan State,,,0,Not Played
-18,Heisha Khan 2,Josh Gordon,58,4,West,2026-03-29 00:00:00,80,,,Arizona,Purdue,,,0,Not Played
-18,Heisha Khan 2,Josh Gordon,59,4,South,2026-03-30 00:00:00,80,,,Florida,Illinois,,,0,Not Played
-18,Heisha Khan 2,Josh Gordon,60,4,Midwest,2026-03-30 00:00:00,80,,,Virginia,Michigan,,,0,Not Played
+18,Heisha Khan 2,Josh Gordon,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,Michigan State,,,0,Not Played
+18,Heisha Khan 2,Josh Gordon,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,Purdue,,,0,Not Played
+18,Heisha Khan 2,Josh Gordon,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Illinois,,,0,Not Played
+18,Heisha Khan 2,Josh Gordon,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Virginia,Michigan,,,0,Not Played
 18,Heisha Khan 2,Josh Gordon,61,5,,2026-04-04 00:00:00,160,,,Duke,Florida,,,0,Not Played
 18,Heisha Khan 2,Josh Gordon,62,5,,2026-04-04 00:00:00,160,,,Arizona,Virginia,,,0,Not Played
 18,Heisha Khan 2,Josh Gordon,63,6,,2026-04-06 00:00:00,320,,,Duke,Arizona,,,0,Not Played
@@ -1189,10 +1189,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 19,Veronica,Veronica Walsh,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Illinois,Houston,Illinois,Houston,1,Correct
 19,Veronica,Veronica Walsh,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Akron,Michigan,Alabama,1,Correct
 19,Veronica,Veronica Walsh,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Tennessee,Iowa State,Tennessee,Iowa State,1,Correct
-19,Veronica,Veronica Walsh,57,4,East,2026-03-29 00:00:00,80,,,Duke,UConn,,,0,Not Played
-19,Veronica,Veronica Walsh,58,4,West,2026-03-29 00:00:00,80,,,Villanova,Purdue,,,0,Not Played
-19,Veronica,Veronica Walsh,59,4,South,2026-03-30 00:00:00,80,,,Vanderbilt,Illinois,,,0,Not Played
-19,Veronica,Veronica Walsh,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Tennessee,,,0,Not Played
+19,Veronica,Veronica Walsh,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,UConn,,,0,Not Played
+19,Veronica,Veronica Walsh,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Villanova,Purdue,,,0,Not Played
+19,Veronica,Veronica Walsh,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Vanderbilt,Illinois,,,0,Not Played
+19,Veronica,Veronica Walsh,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Tennessee,,,0,Not Played
 19,Veronica,Veronica Walsh,61,5,,2026-04-04 00:00:00,160,,,Duke,Vanderbilt,,,0,Not Played
 19,Veronica,Veronica Walsh,62,5,,2026-04-04 00:00:00,160,,,Michigan,Villanova,,,0,Not Played
 19,Veronica,Veronica Walsh,63,6,,2026-04-06 00:00:00,320,,,Duke,Michigan,,,0,Not Played
@@ -1252,10 +1252,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 20,Also Big Dawg,Zach Tulloch,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,North Carolina,Houston,Illinois,Houston,0,Incorrect
 20,Also Big Dawg,Zach Tulloch,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 20,Also Big Dawg,Zach Tulloch,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Tennessee,Iowa State,Tennessee,Iowa State,1,Correct
-20,Also Big Dawg,Zach Tulloch,57,4,East,2026-03-29 00:00:00,80,,,South Florida,Kansas,,,0,Not Played
-20,Also Big Dawg,Zach Tulloch,58,4,West,2026-03-29 00:00:00,80,,,Miami (Fla.),Arizona,,,0,Not Played
-20,Also Big Dawg,Zach Tulloch,59,4,South,2026-03-30 00:00:00,80,,,Florida,North Carolina,,,0,Not Played
-20,Also Big Dawg,Zach Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,,,Tennessee,Michigan,,,0,Not Played
+20,Also Big Dawg,Zach Tulloch,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,South Florida,Kansas,,,0,Not Played
+20,Also Big Dawg,Zach Tulloch,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Miami (Fla.),Arizona,,,0,Not Played
+20,Also Big Dawg,Zach Tulloch,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,North Carolina,,,0,Not Played
+20,Also Big Dawg,Zach Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Tennessee,Michigan,,,0,Not Played
 20,Also Big Dawg,Zach Tulloch,61,5,,2026-04-04 00:00:00,160,,,South Florida,Florida,,,0,Not Played
 20,Also Big Dawg,Zach Tulloch,62,5,,2026-04-04 00:00:00,160,,,Miami (Fla.),Tennessee,,,0,Not Played
 20,Also Big Dawg,Zach Tulloch,63,6,,2026-04-06 00:00:00,320,,,South Florida,Miami (Fla.),,,0,Not Played
@@ -1315,10 +1315,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 21,aaronkong's Picks 2,Aaron Kong,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 21,aaronkong's Picks 2,Aaron Kong,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 21,aaronkong's Picks 2,Aaron Kong,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Tennessee,Iowa State,Tennessee,Iowa State,1,Correct
-21,aaronkong's Picks 2,Aaron Kong,57,4,East,2026-03-29 00:00:00,80,,,Duke,Michigan State,,,0,Not Played
-21,aaronkong's Picks 2,Aaron Kong,58,4,West,2026-03-29 00:00:00,80,,,Gonzaga,Arizona,,,0,Not Played
-21,aaronkong's Picks 2,Aaron Kong,59,4,South,2026-03-30 00:00:00,80,,,Houston,Florida,,,0,Not Played
-21,aaronkong's Picks 2,Aaron Kong,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Tennessee,,,0,Not Played
+21,aaronkong's Picks 2,Aaron Kong,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,Michigan State,,,0,Not Played
+21,aaronkong's Picks 2,Aaron Kong,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Gonzaga,Arizona,,,0,Not Played
+21,aaronkong's Picks 2,Aaron Kong,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Houston,Florida,,,0,Not Played
+21,aaronkong's Picks 2,Aaron Kong,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Tennessee,,,0,Not Played
 21,aaronkong's Picks 2,Aaron Kong,61,5,,2026-04-04 00:00:00,160,,,Houston,Duke,,,0,Not Played
 21,aaronkong's Picks 2,Aaron Kong,62,5,,2026-04-04 00:00:00,160,,,Michigan,Gonzaga,,,0,Not Played
 21,aaronkong's Picks 2,Aaron Kong,63,6,,2026-04-06 00:00:00,320,,,Michigan,Houston,,,0,Not Played
@@ -1378,10 +1378,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 22,Big Dawg,Zach Tulloch,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,North Carolina,Illinois,Houston,0,Incorrect
 22,Big Dawg,Zach Tulloch,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Alabama,Michigan,Alabama,1,Correct
 22,Big Dawg,Zach Tulloch,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-22,Big Dawg,Zach Tulloch,57,4,East,2026-03-29 00:00:00,80,,,UConn,Duke,,,0,Not Played
-22,Big Dawg,Zach Tulloch,58,4,West,2026-03-29 00:00:00,80,,,Gonzaga,Arizona,,,0,Not Played
-22,Big Dawg,Zach Tulloch,59,4,South,2026-03-30 00:00:00,80,,,Florida,Houston,,,0,Not Played
-22,Big Dawg,Zach Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,,,Virginia,Michigan,,,0,Not Played
+22,Big Dawg,Zach Tulloch,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,UConn,Duke,,,0,Not Played
+22,Big Dawg,Zach Tulloch,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Gonzaga,Arizona,,,0,Not Played
+22,Big Dawg,Zach Tulloch,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,Houston,,,0,Not Played
+22,Big Dawg,Zach Tulloch,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Virginia,Michigan,,,0,Not Played
 22,Big Dawg,Zach Tulloch,61,5,,2026-04-04 00:00:00,160,,,UConn,Florida,,,0,Not Played
 22,Big Dawg,Zach Tulloch,62,5,,2026-04-04 00:00:00,160,,,Virginia,Gonzaga,,,0,Not Played
 22,Big Dawg,Zach Tulloch,63,6,,2026-04-06 00:00:00,320,,,UConn,Virginia,,,0,Not Played
@@ -1441,10 +1441,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 23,ESPNFAN5011894331's Picks 1,Gabe Cam,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,North Carolina,Houston,Illinois,Houston,0,Incorrect
 23,ESPNFAN5011894331's Picks 1,Gabe Cam,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Georgia,Texas Tech,Michigan,Alabama,0,Incorrect
 23,ESPNFAN5011894331's Picks 1,Gabe Cam,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Iowa State,Tennessee,Tennessee,Iowa State,0,Incorrect
-23,ESPNFAN5011894331's Picks 1,Gabe Cam,57,4,East,2026-03-29 00:00:00,80,,,St. John's,Louisville,,,0,Not Played
-23,ESPNFAN5011894331's Picks 1,Gabe Cam,58,4,West,2026-03-29 00:00:00,80,,,Purdue,Arizona,,,0,Not Played
-23,ESPNFAN5011894331's Picks 1,Gabe Cam,59,4,South,2026-03-30 00:00:00,80,,,Florida,North Carolina,,,0,Not Played
-23,ESPNFAN5011894331's Picks 1,Gabe Cam,60,4,Midwest,2026-03-30 00:00:00,80,,,Iowa State,Georgia,,,0,Not Played
+23,ESPNFAN5011894331's Picks 1,Gabe Cam,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,St. John's,Louisville,,,0,Not Played
+23,ESPNFAN5011894331's Picks 1,Gabe Cam,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Purdue,Arizona,,,0,Not Played
+23,ESPNFAN5011894331's Picks 1,Gabe Cam,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Florida,North Carolina,,,0,Not Played
+23,ESPNFAN5011894331's Picks 1,Gabe Cam,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Iowa State,Georgia,,,0,Not Played
 23,ESPNFAN5011894331's Picks 1,Gabe Cam,61,5,,2026-04-04 00:00:00,160,,,St. John's,Florida,,,0,Not Played
 23,ESPNFAN5011894331's Picks 1,Gabe Cam,62,5,,2026-04-04 00:00:00,160,,,Purdue,Iowa State,,,0,Not Played
 23,ESPNFAN5011894331's Picks 1,Gabe Cam,63,6,,2026-04-06 00:00:00,320,,,Purdue,St. John's,,,0,Not Played
@@ -1504,10 +1504,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 24,Yang,Michael Koufakis,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,Houston,Illinois,Illinois,Houston,0,Incorrect
 24,Yang,Michael Koufakis,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Michigan,Texas Tech,Michigan,Alabama,1,Correct
 24,Yang,Michael Koufakis,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Virginia,Iowa State,Tennessee,Iowa State,0,Incorrect
-24,Yang,Michael Koufakis,57,4,East,2026-03-29 00:00:00,80,,,Duke,UConn,,,0,Not Played
-24,Yang,Michael Koufakis,58,4,West,2026-03-29 00:00:00,80,,,Arizona,BYU,,,0,Not Played
-24,Yang,Michael Koufakis,59,4,South,2026-03-30 00:00:00,80,,,Vanderbilt,Houston,,,0,Not Played
-24,Yang,Michael Koufakis,60,4,Midwest,2026-03-30 00:00:00,80,,,Michigan,Virginia,,,0,Not Played
+24,Yang,Michael Koufakis,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,UConn,,,0,Not Played
+24,Yang,Michael Koufakis,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Arizona,BYU,,,0,Not Played
+24,Yang,Michael Koufakis,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,Vanderbilt,Houston,,,0,Not Played
+24,Yang,Michael Koufakis,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Michigan,Virginia,,,0,Not Played
 24,Yang,Michael Koufakis,61,5,,2026-04-04 00:00:00,160,,,Duke,Vanderbilt,,,0,Not Played
 24,Yang,Michael Koufakis,62,5,,2026-04-04 00:00:00,160,,,Arizona,Michigan,,,0,Not Played
 24,Yang,Michael Koufakis,63,6,,2026-04-06 00:00:00,320,,,Arizona,Duke,,,0,Not Played
@@ -1567,10 +1567,10 @@ bracket_id,bracket_name,bracket_creator,slot_id,round,region,match_time,potentia
 25,UNC not Chopped,Grant Schwartz,54,3,South,2026-03-26 22:05:00,40,Illinois,Houston,North Carolina,Saint Mary's,Illinois,Houston,0,Incorrect
 25,UNC not Chopped,Grant Schwartz,55,3,Midwest,2026-03-27 19:35:00,40,Michigan,Alabama,Georgia,Alabama,Michigan,Alabama,0,Incorrect
 25,UNC not Chopped,Grant Schwartz,56,3,Midwest,2026-03-27 22:10:00,40,Tennessee,Iowa State,Kentucky,Tennessee,Tennessee,Iowa State,0,Incorrect
-25,UNC not Chopped,Grant Schwartz,57,4,East,2026-03-29 00:00:00,80,,,Duke,UConn,,,0,Not Played
-25,UNC not Chopped,Grant Schwartz,58,4,West,2026-03-29 00:00:00,80,,,Miami (Fla.),Arizona,,,0,Not Played
-25,UNC not Chopped,Grant Schwartz,59,4,South,2026-03-30 00:00:00,80,,,North Carolina,Nebraska,,,0,Not Played
-25,UNC not Chopped,Grant Schwartz,60,4,Midwest,2026-03-30 00:00:00,80,,,Georgia,Kentucky,,,0,Not Played
+25,UNC not Chopped,Grant Schwartz,57,4,East,2026-03-29 00:00:00,80,Duke,UConn,Duke,UConn,,,0,Not Played
+25,UNC not Chopped,Grant Schwartz,58,4,West,2026-03-29 00:00:00,80,Arizona,Purdue,Miami (Fla.),Arizona,,,0,Not Played
+25,UNC not Chopped,Grant Schwartz,59,4,South,2026-03-30 00:00:00,80,Iowa,Illinois,North Carolina,Nebraska,,,0,Not Played
+25,UNC not Chopped,Grant Schwartz,60,4,Midwest,2026-03-30 00:00:00,80,Michigan,Tennessee,Georgia,Kentucky,,,0,Not Played
 25,UNC not Chopped,Grant Schwartz,61,5,,2026-04-04 00:00:00,160,,,North Carolina,Duke,,,0,Not Played
 25,UNC not Chopped,Grant Schwartz,62,5,,2026-04-04 00:00:00,160,,,Miami (Fla.),Georgia,,,0,Not Played
 25,UNC not Chopped,Grant Schwartz,63,6,,2026-04-06 00:00:00,320,,,North Carolina,Miami (Fla.),,,0,Not Played
